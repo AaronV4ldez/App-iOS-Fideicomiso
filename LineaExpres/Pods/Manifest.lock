@@ -1,0 +1,46 @@
+PODS:
+  - DropDown (2.3.13)
+  - iCarousel (1.8.3)
+  - KZFileWatchers (1.0.6)
+  - SignaturePad (1.0.3)
+  - Stylist (0.3.0):
+    - KZFileWatchers (~> 1.0.6)
+    - Yams (~> 2.0.0)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
+  - Yams (2.0.0)
+
+DEPENDENCIES:
+  - DropDown
+  - iCarousel (~> 1.8)
+  - SignaturePad (~> 1.0.3)
+  - Stylist
+  - SwiftGifOrigin
+  - SwiftyRSA
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - iCarousel
+    - KZFileWatchers
+    - SignaturePad
+    - Stylist
+    - SwiftGifOrigin
+    - SwiftyRSA
+    - Yams
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  KZFileWatchers: 029e57c853bed7e6703786937135df5cb993fead
+  SignaturePad: b0d6322a27e90fe3e7d55194606503f5dfacb077
+  Stylist: 48a9d67a4e319b82b8a8efe682fd54875844c504
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  Yams: cb96472112d99e4b368f8dae9ab62e8a3eb8a3f9
+
+PODFILE CHECKSUM: 7b840ec5bdecbcf6f171e5527eb58232a4f14e25
+
+COCOAPODS: 1.11.3

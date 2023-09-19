@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'LineaExpres' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+pod 'SignaturePad', '~> 1.0.3'
+pod 'iCarousel', '~> 1.8'
+pod 'SwiftGifOrigin'
+pod 'DropDown'
+pod 'Stylist'
+pod 'SwiftyRSA'
+
+
+end

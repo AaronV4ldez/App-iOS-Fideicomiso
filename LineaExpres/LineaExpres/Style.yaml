@@ -1,0 +1,7 @@
+variables:
+  h1: Arial:title1
+  primaryColor: C23A45
+styles:
+  UIButton.button:
+    borderColor: 000000:0.2
+    borderWidth: 1
