@@ -144,8 +144,8 @@ class ChangePassViewController: UIViewController {
                             self.view.endEditing(true)
                             NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "successfullyViewController")
                             NotificationCenter.default.post(name: Notification.Name("FinishMSG"), object: message!)
-                            
-                            DB_Manager().addUser(EmailVal: "", NameVal: "", LoginTokenVal: "", UserSetPwdVal: "", Sentri: "", SentriFecha: "")
+                            //Aqui es donde se hace el cierre de sesion (Quitar el comentario si es que quieres que se vuelva a hacer el logout cuando cambias la contrasena)
+                            //DB_Manager().addUser(EmailVal: "", NameVal: "", LoginTokenVal: "", UserSetPwdVal: "", Sentri: "", SentriFecha: "")
                         }
                     }else {
                         DispatchQueue.main.async {

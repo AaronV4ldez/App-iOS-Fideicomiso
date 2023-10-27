@@ -250,8 +250,14 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Ingresar"/>
+                                                        <fragment content="Ingresar">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Bold"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
                                                     </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -266,7 +272,16 @@
                                                     <constraint firstAttribute="height" constant="50" id="Lbd-hd-y1p"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Registrate">
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Registrate">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Bold"/>
+                                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
@@ -2412,6 +2427,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Guardar">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
@@ -2527,6 +2543,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Enviar solicitud">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -2755,7 +2772,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="0.0" y="686" width="384" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-cJ-1Rr">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="avv-oJ-AMQ"/>
                                                 </constraints>
@@ -2770,7 +2787,7 @@ electrónico que usted proporcione.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-mT-Iiq">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                                <rect key="frame" x="0.0" y="40" width="384" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xuG-tH-Ylh"/>
                                                 </constraints>
@@ -2895,6 +2912,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Confirmar">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -2984,10 +3002,10 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ijo-xt-WPL">
-                                                <rect key="frame" x="0.0" y="205" width="354" height="200"/>
+                                                <rect key="frame" x="0.0" y="205" width="354" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis vehículos de Telepeaje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSc-yk-gov">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="BlackGlobal"/>
                                                         <nil key="highlightedColor"/>
@@ -2999,10 +3017,10 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-90-R22">
-                                                <rect key="frame" x="0.0" y="410" width="354" height="90"/>
+                                                <rect key="frame" x="0.0" y="300" width="354" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceso Digital Peatonal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8g-3D-qk5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="BlackGlobal"/>
                                                         <nil key="highlightedColor"/>
@@ -3131,6 +3149,7 @@ electrónico que usted proporcione.</string>
                                                                 <rect key="frame" x="0.0" y="106" width="384" height="34.333333333333343"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Seleccionar tarifa">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                 </buttonConfiguration>
@@ -3180,6 +3199,7 @@ electrónico que usted proporcione.</string>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Continuar">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15"/>
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="baseBackgroundColor" name="BlackGlobal"/>
                                                                 </buttonConfiguration>
@@ -3399,6 +3419,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Continuar">
+                                            <backgroundConfiguration key="background" cornerRadius="15"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="BlackGlobal"/>
                                         </buttonConfiguration>
@@ -3521,6 +3542,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Línea Exprés">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                             <fontDescription key="titleFontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="16"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -3536,6 +3558,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Telepeaje">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                             <fontDescription key="titleFontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="16"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -3560,6 +3583,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="SOLICITUD INSCRIPCION">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                             <fontDescription key="titleFontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="12"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -3688,6 +3712,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Continuar">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                                     <fontDescription key="titleFontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -3788,6 +3813,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Escenear TAG">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -3799,6 +3825,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="97" y="387" width="192" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Validar TAG">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -4182,6 +4209,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="102" y="383" width="180" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Cambiar Contraseña">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -4273,6 +4301,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Aceptar">
+                                                    <backgroundConfiguration key="background" cornerRadius="15"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="BlackGlobal"/>
                                                 </buttonConfiguration>
@@ -4408,7 +4437,8 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Registrar">
-                                                    <fontDescription key="titleFontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="16"/>
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
@@ -4567,6 +4597,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Confirmar código">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
@@ -4590,6 +4621,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Genera uno nuevo">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -4603,6 +4635,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="No es mi número">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -4675,6 +4708,9 @@ electrónico que usted proporcione.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Más información" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIU-qt-AFb">
                                 <rect key="frame" x="26" y="54" width="332" height="50"/>
                                 <color key="backgroundColor" name="PlecaColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ki9-D9-ZRG"/>
                                 </constraints>
@@ -5100,6 +5136,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Enviar">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                     <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -5527,17 +5564,19 @@ electrónico que usted proporcione.</string>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03z-N2-hJF">
                                                 <rect key="frame" x="10.333333333333343" y="0.0" width="60" height="60"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d6H-95-bal">
-                                                        <rect key="frame" x="10" y="11.666666666666664" width="40" height="38"/>
-                                                    </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-KX-M59">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="84"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <backgroundConfiguration key="background" image="fondo gradient1"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="RechargeBtnClick:" destination="a7d-on-Ln3" eventType="touchUpInside" id="5nn-E0-2N0"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d6H-95-bal">
+                                                        <rect key="frame" x="10" y="11.666666666666664" width="40" height="38"/>
+                                                    </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" name="light_blueColor"/>
                                                 <constraints>
@@ -5773,6 +5812,7 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Continuar">
+                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                 </buttonConfiguration>
@@ -5981,6 +6021,7 @@ electrónico que usted proporcione.</string>
                                                                 <rect key="frame" x="0.0" y="177.66666666666669" width="384" height="44.666666666666657"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Ver disponibilidad">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                 </buttonConfiguration>
@@ -5998,6 +6039,7 @@ electrónico que usted proporcione.</string>
                                                                 <rect key="frame" x="0.0" y="266.66666666666669" width="384" height="44.333333333333314"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Horarios">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                     <color key="baseBackgroundColor" name="BlackGlobal"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
@@ -6014,6 +6056,7 @@ electrónico que usted proporcione.</string>
                                                                 <rect key="frame" x="0.0" y="355.66666666666669" width="384" height="44.333333333333314"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Confirmar Cita">
+                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                 </buttonConfiguration>
@@ -6372,7 +6415,7 @@ electrónico que usted proporcione.</string>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdZ-vO-QaO">
-                                        <rect key="frame" x="0.0" y="230" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vuz-iV-14U">
                                                 <rect key="frame" x="0.0" y="90" width="414" height="716"/>
@@ -6728,6 +6771,7 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Escenear TAG">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -6739,6 +6783,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="97" y="387" width="192" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Validar TAG">
+                                            <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" name="light_blueColor"/>
                                         </buttonConfiguration>
@@ -6901,6 +6946,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="18.000000000000004" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="VER TRÁMITES">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -6930,6 +6976,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="18.000000000000004" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="GENERA TU CITA AQUÍ">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -6962,6 +7009,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="60" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="GENERA TU CITA AQUÍ">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -6986,6 +7034,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="34.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="TELEPEAJE">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -6997,6 +7046,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="39.333333333333371" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="ACCESO DIGITAL PEATONAL">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -7008,6 +7058,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="78.666666666666629" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="LÍNEA EXPRÉS">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -7019,6 +7070,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="117.99999999999999" width="384" height="34.333333333333329"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="BORRAR CUENTA">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -7036,6 +7088,7 @@ electrónico que usted proporcione.</string>
                                                                                 <rect key="frame" x="0.0" y="188.33333333333337" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="¡REGISTRATE AQUÍ!">
+                                                                                    <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
                                                                                 </buttonConfiguration>
@@ -7114,7 +7167,7 @@ electrónico que usted proporcione.</string>
                                                         <buttonConfiguration key="configuration" style="filled" title="Cancelar">
                                                             <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" name="light_blueColor"/>
+                                                            <color key="baseBackgroundColor" red="0.3411764705882353" green="0.20392156862745098" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="CancelarProcesoBorradoCuentaBtn:" destination="SQP-AF-f3H" eventType="touchUpInside" id="EKO-0Q-TtK"/>
@@ -7126,7 +7179,7 @@ electrónico que usted proporcione.</string>
                                                         <buttonConfiguration key="configuration" style="filled" title="De acuerdo">
                                                             <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" name="light_blueColor"/>
+                                                            <color key="baseBackgroundColor" red="0.098039215686274508" green="0.43137254901960786" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="BorrarCuentaBtn:" destination="SQP-AF-f3H" eventType="touchUpInside" id="zbQ-Bf-VzQ"/>
@@ -7200,7 +7253,9 @@ electrónico que usted proporcione.</string>
         <image name="LineaExpresImg" width="104" height="67"/>
         <image name="SplashScreen" width="618" height="1305"/>
         <image name="TelepeajeImg" width="360" height="240"/>
+        <image name="btnbg2" width="1600" height="647"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="fondo gradient1" width="1600" height="647"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="humidity" catalog="system" width="128" height="96"/>
         <image name="image_loader" width="400" height="400"/>

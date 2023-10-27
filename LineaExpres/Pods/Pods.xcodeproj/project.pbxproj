@@ -194,7 +194,7 @@
 		069A2FF2B3198CB0B48679CC69FFF0AB /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
 		0C934E5DEB8893CC50FBA9BE849DEDAA /* SignaturePad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignaturePad-umbrella.h"; sourceTree = "<group>"; };
 		0CDAB402CBC20819413A96C550CE2FD1 /* iCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-umbrella.h"; sourceTree = "<group>"; };
-		0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyRSA; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		119A00379E192E33570856FC162C1033 /* iCarousel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iCarousel-Info.plist"; sourceTree = "<group>"; };
 		11E1125C13552DEF6324D538A3B29C6B /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
 		13FF78C0D6BD5EA94FDF65A731DDFDE0 /* KZFileWatchers.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KZFileWatchers.modulemap; sourceTree = "<group>"; };
@@ -206,7 +206,7 @@
 		1A03D0F8513E76D592D75681C513EB83 /* SignaturePad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignaturePad-dummy.m"; sourceTree = "<group>"; };
 		1A70A13AF0E84136EC5157DAA501B469 /* SwiftGifOrigin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.debug.xcconfig; sourceTree = "<group>"; };
 		1BC61F5AD4644330A04F3F01E8B255D9 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Stylist/StyleValues/Image.swift; sourceTree = "<group>"; };
-		1DB2A661F46B8B535538364F3E1E0521 /* Pods-LineaExpres */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LineaExpres"; path = Pods_LineaExpres.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB2A661F46B8B535538364F3E1E0521 /* Pods_LineaExpres.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineaExpres.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CCCC1B8F3AE8CF65A0F1B2ACDD8A0E /* SwiftyRSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyRSA.release.xcconfig; sourceTree = "<group>"; };
 		216D29D251048607C337244F3F538B8C /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
 		249B6233EDBE79FFFC880CC7B2C27C2D /* Stylist-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stylist-prefix.pch"; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		2E0B206550F209637115082CBBCE4989 /* Mark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mark.swift; path = Sources/Yams/Mark.swift; sourceTree = "<group>"; };
 		2E7B5098537127CF5FC22296C1F655A0 /* UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKit.swift; path = Stylist/StyleValues/UIKit.swift; sourceTree = "<group>"; };
 		2EE5522C2CBB4E89A43366F49440683E /* LayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Stylist/StyleValues/LayoutAnchor.swift; sourceTree = "<group>"; };
-		2FB068808305BE3EFB41368ADFB9488E /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = emitter.c; path = Sources/CYaml/src/emitter.c; sourceTree = "<group>"; };
+		2FB068808305BE3EFB41368ADFB9488E /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = Sources/CYaml/src/emitter.c; sourceTree = "<group>"; };
 		3026DF900B3E81DB26C7FDBEBA1BDC4B /* BarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarItem.swift; path = Stylist/Properties/BarItem.swift; sourceTree = "<group>"; };
 		35EBE902806D5ADF376E14305D53369C /* PropertyContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyContext.swift; path = Stylist/PropertyContext.swift; sourceTree = "<group>"; };
 		37DE7957C72EADD67ABE3605DD9F4246 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 		56B27C97D84C438AA62E75B2BC0335C5 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
 		57953BB15EDB702001BB7DC7029AC089 /* SwiftGifOrigin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGifOrigin.release.xcconfig; sourceTree = "<group>"; };
 		58C525D01BBE7C62BA263C72C485FF44 /* iCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iCarousel.modulemap; sourceTree = "<group>"; };
-		593A7576E82F169400F9526EC9F83E26 /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
+		593A7576E82F169400F9526EC9F83E26 /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
 		5ADE878CC1B5CFE071BB9AE9A9A0CFCD /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Source/Message.swift; sourceTree = "<group>"; };
 		5B477F2CAC77299B4759E7609B66AE56 /* NSData+SHA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SHA.h"; path = "Source/NSData+SHA.h"; sourceTree = "<group>"; };
 		5C8502242FC00C4F397F04E8D2269F1F /* Pods-LineaExpres-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LineaExpres-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -250,11 +250,11 @@
 		69D78829496F2FD1CBE9D021FE732820 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
 		6A084B87E78F55927C1E74D35BC61EB8 /* Constructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constructor.swift; path = Sources/Yams/Constructor.swift; sourceTree = "<group>"; };
 		6D8875ADC158F450B3E559DCB2D74E4A /* Pods-LineaExpres.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LineaExpres.debug.xcconfig"; sourceTree = "<group>"; };
-		6D90F616EF0FF6AB2143FDEE092A95B7 /* Stylist */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stylist; path = Stylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D90F616EF0FF6AB2143FDEE092A95B7 /* Stylist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stylist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF09ABDACAE76EF52D7241B91947667 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		6E4CEDFD7D477B42CEBC037BBDC14A29 /* SwiftyRSA+ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyRSA+ObjC.swift"; path = "Source/SwiftyRSA+ObjC.swift"; sourceTree = "<group>"; };
-		6E792B86D58BFA5C9E3462700C257D53 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = reader.c; path = Sources/CYaml/src/reader.c; sourceTree = "<group>"; };
-		73048F68DF0D41B51C260BB3E02E724D /* KZFileWatchers */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KZFileWatchers; path = KZFileWatchers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E792B86D58BFA5C9E3462700C257D53 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = reader.c; path = Sources/CYaml/src/reader.c; sourceTree = "<group>"; };
+		73048F68DF0D41B51C260BB3E02E724D /* KZFileWatchers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KZFileWatchers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		735703FBCCC6F961525BA28DFA02F03B /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Stylist/Properties/ViewController.swift; sourceTree = "<group>"; };
 		74439DD22DFC879C11771C964DD8CA9C /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		745503F3D48DAB69EF9E2EAEE264F979 /* SwiftyRSA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyRSA-umbrella.h"; sourceTree = "<group>"; };
@@ -271,11 +271,11 @@
 		885FA0C9BEA0103EF74AB1AC3D576876 /* Stylist-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stylist-umbrella.h"; sourceTree = "<group>"; };
 		88B04F3204EE18F82E8F1EA8D26841BB /* EncryptedMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EncryptedMessage.swift; path = Source/EncryptedMessage.swift; sourceTree = "<group>"; };
 		8AC3A837ADAF9237ED1B62F41491B1F9 /* Stylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stylist.debug.xcconfig; sourceTree = "<group>"; };
-		8B5263395CD3D9329B28E4AA9835ED45 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = writer.c; path = Sources/CYaml/src/writer.c; sourceTree = "<group>"; };
+		8B5263395CD3D9329B28E4AA9835ED45 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = writer.c; path = Sources/CYaml/src/writer.c; sourceTree = "<group>"; };
 		8C5925A92B4208FF62511E53B8129A92 /* Stylist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stylist.release.xcconfig; sourceTree = "<group>"; };
 		8D465D9CAF3E3EE7F6268DE44ECF5CE6 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = KZFileWatchers/Classes/Common.swift; sourceTree = "<group>"; };
 		8D73A5FC11B8B60C210FF2EB789E6DDA /* Styleable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Styleable.swift; path = Stylist/Styleable.swift; sourceTree = "<group>"; };
-		8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftGifOrigin; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E990FB14E0F26513770FACEB698BF99 /* SignaturePad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignaturePad.debug.xcconfig; sourceTree = "<group>"; };
 		8EB7497A0B80A2E2222D0BBC7C8725A2 /* Swizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swizzle.swift; path = Stylist/Swizzle.swift; sourceTree = "<group>"; };
 		8F063E38B0581F2E1E423AC44DAEABBB /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
@@ -285,10 +285,10 @@
 		96761A42452B499D092C915AF48A5AF9 /* UIImage+Gif.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "SwiftGifCommon/UIImage+Gif.swift"; sourceTree = "<group>"; };
 		97825A3FAD5924D9AC96CD16E0FA5BAB /* Pods-LineaExpres.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LineaExpres.release.xcconfig"; sourceTree = "<group>"; };
 		98260D45BD4F40886EBFC7DE69C01285 /* NSData+SHA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SHA.m"; path = "Source/NSData+SHA.m"; sourceTree = "<group>"; };
-		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC10202F1C6F14215CC6BDD1A0F02FC /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Stylist/StyleValues/Font.swift; sourceTree = "<group>"; };
-		A1567DB86D91AE9BA55D6C796FE4BBAF /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parser.c; path = Sources/CYaml/src/parser.c; sourceTree = "<group>"; };
+		A1567DB86D91AE9BA55D6C796FE4BBAF /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = parser.c; path = Sources/CYaml/src/parser.c; sourceTree = "<group>"; };
 		A231C79853B561871AA76605006A5105 /* Stylist-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stylist-dummy.m"; sourceTree = "<group>"; };
 		A2D916C2E81AEDABF7DAF55D3A1E05A6 /* KZFileWatchers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KZFileWatchers-umbrella.h"; sourceTree = "<group>"; };
 		A30686AE43C82A57ACFAF6DF91CCAE5D /* SignaturePad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignaturePad.release.xcconfig; sourceTree = "<group>"; };
@@ -300,10 +300,10 @@
 		B814FB7E1B62C6AA852A05BFE8653CEC /* SwiftyRSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyRSA.h; path = Source/SwiftyRSA.h; sourceTree = "<group>"; };
 		B93445761395187ED8760DFDACD8CA12 /* Node.Mapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Mapping.swift; path = Sources/Yams/Node.Mapping.swift; sourceTree = "<group>"; };
 		BF0FDE8F935085B6D6E215E6970E7AE7 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		BFA79CC3090548197F276DAFA5644E28 /* Yams */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Yams; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA79CC3090548197F276DAFA5644E28 /* Yams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD46B592071AABDDF83051B32F32D51 /* Local.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Local.swift; path = KZFileWatchers/Classes/Local/Local.swift; sourceTree = "<group>"; };
-		C5ED0479B83597DBED4C6C08963A5027 /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanner.c; path = Sources/CYaml/src/scanner.c; sourceTree = "<group>"; };
-		C8217EB109A6A34051F09192C29B676F /* iCarousel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iCarousel; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ED0479B83597DBED4C6C08963A5027 /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = scanner.c; path = Sources/CYaml/src/scanner.c; sourceTree = "<group>"; };
+		C8217EB109A6A34051F09192C29B676F /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D93CFD936302F074C50AF600D5850B /* PrivateKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivateKey.swift; path = Source/PrivateKey.swift; sourceTree = "<group>"; };
 		CAFFAA8CF1F23B8EE2B5D575A27BB8C1 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Yams/Node.swift; sourceTree = "<group>"; };
 		CB1EA26465A04344BE6D97485918A79B /* SignaturePad-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SignaturePad-Info.plist"; sourceTree = "<group>"; };
@@ -311,7 +311,7 @@
 		CE3D4AF300BECAD17191D3211854EAA3 /* StyleValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleValue.swift; path = Stylist/StyleValue.swift; sourceTree = "<group>"; };
 		D0B5B86750CE08136C53392E728451AA /* SignaturePad-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignaturePad-prefix.pch"; sourceTree = "<group>"; };
 		D22477BD4574194C0B8097BF82E348E1 /* SwiftGifOrigin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftGifOrigin.modulemap; sourceTree = "<group>"; };
-		D2E615A2513C1449097BD0039CDBFEB9 /* SignaturePad */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SignaturePad; path = SignaturePad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E615A2513C1449097BD0039CDBFEB9 /* SignaturePad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignaturePad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F928B24F6C12FE68A7AAFCB10D4259 /* Yams-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-umbrella.h"; sourceTree = "<group>"; };
 		D396B2D6C9694A7AAFA976B6186B2490 /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Source/Key.swift; sourceTree = "<group>"; };
 		D4E3C1D0CF5B81A7DD4A6B3AB3BF08B3 /* SwiftGifOrigin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftGifOrigin-prefix.pch"; sourceTree = "<group>"; };
@@ -484,7 +484,6 @@
 				A61198AED97D584F640063276F020CA1 /* SignaturePad.swift */,
 				A11A0CA506ACAEF4B1E589A9C71F8A17 /* Support Files */,
 			);
-			name = SignaturePad;
 			path = SignaturePad;
 			sourceTree = "<group>";
 		};
@@ -515,7 +514,6 @@
 				735703FBCCC6F961525BA28DFA02F03B /* ViewController.swift */,
 				7621AF4289C8F2402F02EAAE9572C254 /* Support Files */,
 			);
-			name = Stylist;
 			path = Stylist;
 			sourceTree = "<group>";
 		};
@@ -531,7 +529,6 @@
 				7F3C831C36F3888EDFF8226CB49F95EC /* Resources */,
 				F40C382C2503E107C6D66E5B08EAB7E6 /* Support Files */,
 			);
-			name = DropDown;
 			path = DropDown;
 			sourceTree = "<group>";
 		};
@@ -541,7 +538,6 @@
 				96761A42452B499D092C915AF48A5AF9 /* UIImage+Gif.swift */,
 				753CBF9B7E83FDCF006A2DE9760A48D9 /* Support Files */,
 			);
-			name = SwiftGifOrigin;
 			path = SwiftGifOrigin;
 			sourceTree = "<group>";
 		};
@@ -639,7 +635,6 @@
 				DE6F3128CC201516EA7FD9D8930F87BB /* Yams.h */,
 				106B3A33A3C2CE3318F0528B601619EB /* Support Files */,
 			);
-			name = Yams;
 			path = Yams;
 			sourceTree = "<group>";
 		};
@@ -681,7 +676,6 @@
 				40A750D51CE4918A72F0FC53BCD05EFF /* Remote.swift */,
 				8FE64E0C4931AF15B4C12DD8FD26591A /* Support Files */,
 			);
-			name = KZFileWatchers;
 			path = KZFileWatchers;
 			sourceTree = "<group>";
 		};
@@ -703,15 +697,15 @@
 		A327EC2B2B8322BE2D2059CA32EFBEB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
-				C8217EB109A6A34051F09192C29B676F /* iCarousel */,
-				73048F68DF0D41B51C260BB3E02E724D /* KZFileWatchers */,
-				1DB2A661F46B8B535538364F3E1E0521 /* Pods-LineaExpres */,
-				D2E615A2513C1449097BD0039CDBFEB9 /* SignaturePad */,
-				6D90F616EF0FF6AB2143FDEE092A95B7 /* Stylist */,
-				8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin */,
-				0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA */,
-				BFA79CC3090548197F276DAFA5644E28 /* Yams */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
+				C8217EB109A6A34051F09192C29B676F /* iCarousel.framework */,
+				73048F68DF0D41B51C260BB3E02E724D /* KZFileWatchers.framework */,
+				1DB2A661F46B8B535538364F3E1E0521 /* Pods_LineaExpres.framework */,
+				D2E615A2513C1449097BD0039CDBFEB9 /* SignaturePad.framework */,
+				6D90F616EF0FF6AB2143FDEE092A95B7 /* Stylist.framework */,
+				8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin.framework */,
+				0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA.framework */,
+				BFA79CC3090548197F276DAFA5644E28 /* Yams.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -723,7 +717,6 @@
 				E9A61A5C621CFB3B10CA4114E674DC68 /* iCarousel.m */,
 				1E20D49BD7E832562CEEA73BFE6E197D /* Support Files */,
 			);
-			name = iCarousel;
 			path = iCarousel;
 			sourceTree = "<group>";
 		};
@@ -765,7 +758,6 @@
 				77E357AEECA69C49DD363FD631F0A326 /* ObjC */,
 				0A75D5B849CE25141A02011971FE4EE9 /* Support Files */,
 			);
-			name = SwiftyRSA;
 			path = SwiftyRSA;
 			sourceTree = "<group>";
 		};
@@ -897,7 +889,7 @@
 			);
 			name = Stylist;
 			productName = Stylist;
-			productReference = 6D90F616EF0FF6AB2143FDEE092A95B7 /* Stylist */;
+			productReference = 6D90F616EF0FF6AB2143FDEE092A95B7 /* Stylist.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		471EC512D75B1827859B4F07F430F65F /* KZFileWatchers */ = {
@@ -915,7 +907,7 @@
 			);
 			name = KZFileWatchers;
 			productName = KZFileWatchers;
-			productReference = 73048F68DF0D41B51C260BB3E02E724D /* KZFileWatchers */;
+			productReference = 73048F68DF0D41B51C260BB3E02E724D /* KZFileWatchers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		548E0F26A10990707D8D4870D2490ACC /* iCarousel */ = {
@@ -933,7 +925,7 @@
 			);
 			name = iCarousel;
 			productName = iCarousel;
-			productReference = C8217EB109A6A34051F09192C29B676F /* iCarousel */;
+			productReference = C8217EB109A6A34051F09192C29B676F /* iCarousel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		643E2173EB8F18AE8C4C6C281CA4EB3D /* SignaturePad */ = {
@@ -951,7 +943,7 @@
 			);
 			name = SignaturePad;
 			productName = SignaturePad;
-			productReference = D2E615A2513C1449097BD0039CDBFEB9 /* SignaturePad */;
+			productReference = D2E615A2513C1449097BD0039CDBFEB9 /* SignaturePad.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7A5852F1D89CE2FE43485C63F48F223A /* Yams */ = {
@@ -969,7 +961,7 @@
 			);
 			name = Yams;
 			productName = Yams;
-			productReference = BFA79CC3090548197F276DAFA5644E28 /* Yams */;
+			productReference = BFA79CC3090548197F276DAFA5644E28 /* Yams.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		92A1C13902E7ACDA3ABB5BA1FEACC86C /* SwiftyRSA */ = {
@@ -987,7 +979,7 @@
 			);
 			name = SwiftyRSA;
 			productName = SwiftyRSA;
-			productReference = 0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA */;
+			productReference = 0DA4828908E30CE4A29CB9AD3A405635 /* SwiftyRSA.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		96A14DD002D80B1D283F526A80740CC3 /* Pods-LineaExpres */ = {
@@ -1013,7 +1005,7 @@
 			);
 			name = "Pods-LineaExpres";
 			productName = Pods_LineaExpres;
-			productReference = 1DB2A661F46B8B535538364F3E1E0521 /* Pods-LineaExpres */;
+			productReference = 1DB2A661F46B8B535538364F3E1E0521 /* Pods_LineaExpres.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A7F9119A842E66F127E010A97169E4F4 /* SwiftGifOrigin */ = {
@@ -1031,7 +1023,7 @@
 			);
 			name = SwiftGifOrigin;
 			productName = SwiftGifOrigin;
-			productReference = 8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin */;
+			productReference = 8E11114EB42D9DA49AD3DCEAD6567E79 /* SwiftGifOrigin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
@@ -1049,7 +1041,7 @@
 			);
 			name = DropDown;
 			productName = DropDown;
-			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown */;
+			productReference = 9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1376,7 +1368,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SignaturePad/SignaturePad-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignaturePad/SignaturePad-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1409,7 +1401,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Yams/Yams-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Yams/Yams-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1443,7 +1435,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Stylist/Stylist-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Stylist/Stylist-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1477,7 +1469,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KZFileWatchers/KZFileWatchers-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KZFileWatchers/KZFileWatchers-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1512,7 +1504,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Yams/Yams-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Yams/Yams-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1547,7 +1539,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCarousel/iCarousel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1582,7 +1574,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1616,7 +1608,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SignaturePad/SignaturePad-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SignaturePad/SignaturePad-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1712,7 +1704,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyRSA/SwiftyRSA-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyRSA/SwiftyRSA-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1747,7 +1739,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1784,7 +1776,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KZFileWatchers/KZFileWatchers-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KZFileWatchers/KZFileWatchers-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1884,12 +1876,13 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
 				PRODUCT_MODULE_NAME = DropDown;
 				PRODUCT_NAME = DropDown;
@@ -1919,7 +1912,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyRSA/SwiftyRSA-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftyRSA/SwiftyRSA-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1954,12 +1947,13 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DropDown/DropDown-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DropDown/DropDown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = "Target Support Files/DropDown/DropDown.modulemap";
 				PRODUCT_MODULE_NAME = DropDown;
 				PRODUCT_NAME = DropDown;
@@ -1988,7 +1982,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCarousel/iCarousel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2023,7 +2017,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2059,7 +2053,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftGifOrigin/SwiftGifOrigin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2094,7 +2088,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Stylist/Stylist-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Stylist/Stylist-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
