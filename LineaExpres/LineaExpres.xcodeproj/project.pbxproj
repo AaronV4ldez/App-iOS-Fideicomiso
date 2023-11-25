@@ -30,6 +30,7 @@
 		2188EF91293E80970035146D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EF90293E80970035146D /* AppDelegate.swift */; };
 		2188EF93293E80970035146D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EF92293E80970035146D /* SceneDelegate.swift */; };
 		2188EF95293E80970035146D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EF94293E80970035146D /* ViewController.swift */; };
+		2188EF98293E80970035146D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF96293E80970035146D /* Main.storyboard */; };
 		2188EF9A293E80990035146D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF99293E80990035146D /* Assets.xcassets */; };
 		2188EF9D293E80990035146D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF9B293E80990035146D /* LaunchScreen.storyboard */; };
 		2188EFC2293E852E0035146D /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EFC1293E852E0035146D /* HamburgerViewController.swift */; };
@@ -61,7 +62,6 @@
 		21F0750E29503EBD00CEFAC2 /* TramitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0750D29503EBD00CEFAC2 /* TramitesViewController.swift */; };
 		21F0751029504CF200CEFAC2 /* SolInscripcionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0750F29504CF200CEFAC2 /* SolInscripcionViewController.swift */; };
 		21FD697F29A44BA5005EBE71 /* Style.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 21FD697E29A44BA5005EBE71 /* Style.yaml */; };
-		45AC21A72ABBA8F0007F8198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF96293E80970035146D /* Main.storyboard */; };
 		482022A31E04E569C49F4107 /* Pods_LineaExpres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */; };
 /* End PBXBuildFile section */
 
@@ -441,9 +441,9 @@
 				21907AA529F0EF5F0082CDD6 /* cert_p.der in Resources */,
 				2188EF9D293E80990035146D /* LaunchScreen.storyboard in Resources */,
 				21D0834B2947C840001E5D0A /* GoogleService-Info.plist in Resources */,
-				45AC21A72ABBA8F0007F8198 /* Main.storyboard in Resources */,
 				21FD697F29A44BA5005EBE71 /* Style.yaml in Resources */,
 				2188EF9A293E80990035146D /* Assets.xcassets in Resources */,
+				2188EF98293E80970035146D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,10 +722,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LineaExpres/LineaExpres.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RRLTLTCP34;
+				DEVELOPMENT_TEAM = 2UG28YH9W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LineaExpres/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PuentesFront;
@@ -739,15 +738,14 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.29;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.emobile.lineaexpres;
+				MARKETING_VERSION = 4.32;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.puentesfronterizos.lineaexpres;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -761,10 +759,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LineaExpres/LineaExpres.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RRLTLTCP34;
+				DEVELOPMENT_TEAM = 2UG28YH9W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LineaExpres/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PuentesFront;
@@ -778,15 +775,14 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.29;
-				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.emobile.lineaexpres;
+				MARKETING_VERSION = 4.32;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.puentesfronterizos.lineaexpres;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
