@@ -62,7 +62,7 @@
 		21F0750E29503EBD00CEFAC2 /* TramitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0750D29503EBD00CEFAC2 /* TramitesViewController.swift */; };
 		21F0751029504CF200CEFAC2 /* SolInscripcionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0750F29504CF200CEFAC2 /* SolInscripcionViewController.swift */; };
 		21FD697F29A44BA5005EBE71 /* Style.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 21FD697E29A44BA5005EBE71 /* Style.yaml */; };
-		482022A31E04E569C49F4107 /* Pods_LineaExpres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */; };
+		4515085A2B1FC8F200DD867C /* Pods_LineaExpres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +127,7 @@
 		218C7707295C76D900ABD8A3 /* CrearCitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearCitaViewController.swift; sourceTree = "<group>"; };
 		218C770B295CA99C00ABD8A3 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		218C770D295CB61700ABD8A3 /* TelepeajeUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelepeajeUploadViewController.swift; sourceTree = "<group>"; };
-		21907AA229F0EA6B0082CDD6 /* cert_p.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = cert_p.der; path = ../../../Downloads/cert_p.der; sourceTree = "<group>"; };
+		21907AA229F0EA6B0082CDD6 /* cert_p.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert_p.der; sourceTree = "<group>"; };
 		21907AA429F0EF5F0082CDD6 /* cert_p.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = cert_p.der; path = LineaExpres/cert_p.der; sourceTree = "<group>"; };
 		2197C3EF29AEF8040087A9A6 /* CrucesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrucesViewController.swift; sourceTree = "<group>"; };
 		219E846E299965FA0090595F /* ChangeCitasListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCitasListViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		21F0750F29504CF200CEFAC2 /* SolInscripcionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolInscripcionViewController.swift; sourceTree = "<group>"; };
 		21FD697E29A44BA5005EBE71 /* Style.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = Style.yaml; sourceTree = "<group>"; };
 		456BF75A47810C27AC4B65DE /* Pods-LineaExpres.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineaExpres.debug.xcconfig"; path = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres.debug.xcconfig"; sourceTree = "<group>"; };
-		74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineaExpres.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LineaExpres.framework; path = "../../../../LineaExpres-cvgiuhycripobyezctgyrjntahxz/Build/Products/Debug-iphoneos/Pods_LineaExpres.framework/Pods_LineaExpres.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE71D420B620656F13D009D /* Pods-LineaExpres.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineaExpres.release.xcconfig"; path = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,9 +168,9 @@
 				218734A3294305C80055C582 /* FirebaseAnalytics in Frameworks */,
 				213D841A29544E27008F046C /* Stripe in Frameworks */,
 				21C29FC9294ABA8100A45DAC /* SwiftyJSON in Frameworks */,
+				4515085A2B1FC8F200DD867C /* Pods_LineaExpres.framework in Frameworks */,
 				218734A829430FA00055C582 /* FirebaseAuth in Frameworks */,
 				213D8418295431EA008F046C /* StripePaymentSheet in Frameworks */,
-				482022A31E04E569C49F4107 /* Pods_LineaExpres.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +280,8 @@
 				213D841129541550008F046C /* VehicleViewController.swift */,
 				21D7F6C02991223000BA2299 /* VehiculosViewController.swift */,
 			);
-			path = "\U0010Controller";
+			name = "\U0010Controller";
+			path = _Controller;
 			sourceTree = "<group>";
 		};
 		21D0834C2947E58E001E5D0A /* fonts */ = {
@@ -466,7 +467,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		56102670733229F7B49D1B42 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -476,7 +477,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LineaExpres/Pods-LineaExpres-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LineaExpres/Pods-LineaExpres-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -738,7 +739,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,7 +776,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
