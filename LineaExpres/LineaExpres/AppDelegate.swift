@@ -140,8 +140,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 
       return UIBackgroundFetchResult.newData
     }
-
-    
 }
 
 extension AppDelegate: MessagingDelegate {

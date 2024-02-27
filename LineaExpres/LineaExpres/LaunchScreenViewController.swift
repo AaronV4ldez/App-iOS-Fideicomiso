@@ -47,7 +47,7 @@ class LaunchScreenViewController: UIViewController {
     }
     
     func makeGetCall() {
-        guard let url = URL(string: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/posts?per_page=10&categories=18&_embed") else {
+        guard let url = URL(string: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/posts?per_page=10&categories=18&_embed") else {
             print("Error: \(String(describing: link)) doesn't seem to be a valid URL")
             return
         }

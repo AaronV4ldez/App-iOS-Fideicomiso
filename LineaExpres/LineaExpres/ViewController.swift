@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         let statusBarHeight = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
         ColorHeaderHeight.constant = statusBarHeight
         
-        let url = URL(string: "https://lineaexpress.desarrollosenlanube.net/wp-content/uploads/2022/07/Cabezal714x119_Color.png")
+        let url = URL(string: "https://noticias.fpfch.gob.mx/wp-content/uploads/2022/07/Cabezal714x119_Color.png")
         DispatchQueue.background(background: {
             let data = try? Data(contentsOf: url!)
             DispatchQueue.main.async() {
@@ -106,28 +106,43 @@ class ViewController: UIViewController {
     }
     
     func reloadData() {
-        guard let url = URL(string: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/posts?per_page=10&categories=18&_embed") else {
-            print("Error: \(String(describing: link)) doesn't seem to be a valid URL")
+        guard let url = URL(string: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/posts?per_page=10&categories=18&_embed") else {
+            print("Error: URL is not valid")
             return
         }
         
-        do {
-            let content = try String(contentsOf: url, encoding: .ascii)
-            let json = JSON.init(parseJSON: content)
-            
-            for index in 0..<(json.count) {
-                
-                let NotaID:Int = json[index]["id"].intValue
-                let Title:String = json[index]["title"]["rendered"].stringValue
-                let Body:String = json[index]["content"]["rendered"].stringValue
-                let imageUrl:String = json[index]["_embedded"]["wp:featuredmedia"][0]["source_url"].stringValue
-                db.DeleteAllFromNotasTable()
-                db.InsertNotas(NotaID: NotaID, NotaTitle: Title, NotaBody: Body, NotaImageURL: imageUrl)
-                
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                print("Error: \(error)")
+                return
             }
-        } catch let error {
-            print("Error: \(error)")
+            
+            guard let data = data else {
+                print("Error: No data received")
+                return
+            }
+            
+            do {
+                let json = try JSON(data: data)
+                
+                for index in 0..<json.count {
+                    let NotaID = json[index]["id"].intValue
+                    let Title = json[index]["title"]["rendered"].stringValue
+                    let Body = json[index]["content"]["rendered"].stringValue
+                    let imageUrl = json[index]["_embedded"]["wp:featuredmedia"][0]["source_url"].stringValue
+                    
+                    // Perform database operations asynchronously on the main queue
+                    DispatchQueue.main.async {
+                        self.db.DeleteAllFromNotasTable()
+                        self.db.InsertNotas(NotaID: NotaID, NotaTitle: Title, NotaBody: Body, NotaImageURL: imageUrl)
+                    }
+                }
+            } catch {
+                print("Error parsing JSON: \(error)")
+            }
         }
+        
+        task.resume()
     }
     
     @objc func onResume() {
@@ -655,7 +670,7 @@ public class vistaVehRecargar {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         var res = 0
         
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/tags/exists/\(tag)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/\(tag)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
