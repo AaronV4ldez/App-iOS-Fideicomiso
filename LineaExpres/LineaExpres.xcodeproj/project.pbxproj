@@ -127,7 +127,7 @@
 		218C7707295C76D900ABD8A3 /* CrearCitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearCitaViewController.swift; sourceTree = "<group>"; };
 		218C770B295CA99C00ABD8A3 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		218C770D295CB61700ABD8A3 /* TelepeajeUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelepeajeUploadViewController.swift; sourceTree = "<group>"; };
-		21907AA229F0EA6B0082CDD6 /* cert_p.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = cert_p.der; path = ../../../Downloads/cert_p.der; sourceTree = "<group>"; };
+		21907AA229F0EA6B0082CDD6 /* cert_p.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert_p.der; sourceTree = "<group>"; };
 		21907AA429F0EF5F0082CDD6 /* cert_p.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = cert_p.der; path = LineaExpres/cert_p.der; sourceTree = "<group>"; };
 		2197C3EF29AEF8040087A9A6 /* CrucesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrucesViewController.swift; sourceTree = "<group>"; };
 		219E846E299965FA0090595F /* ChangeCitasListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCitasListViewController.swift; sourceTree = "<group>"; };
@@ -280,8 +280,9 @@
 				213D841129541550008F046C /* VehicleViewController.swift */,
 				21D7F6C02991223000BA2299 /* VehiculosViewController.swift */,
 			);
-			path = "\U0010Controller";
-			sourceTree = "<group>";
+			name = "\U0010Controller";
+			path = "/Users/imacmi/Documents/GitHub/App-iOS-Fideicomiso/LineaExpres/LineaExpres/_Controller";
+			sourceTree = "<absolute>";
 		};
 		21D0834C2947E58E001E5D0A /* fonts */ = {
 			isa = PBXGroup;
