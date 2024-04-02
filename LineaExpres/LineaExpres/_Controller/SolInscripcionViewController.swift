@@ -1489,25 +1489,35 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
         
         switch TipoTramite{
         case 0:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p01", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p01", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p01", noTramite: TipoTramite)
         case 1:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p03", noTramite: TipoTramite)
         case 2:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p03", noTramite: TipoTramite)
         case 3:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p03", noTramite: TipoTramite)
         case 4:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p03", noTramite: TipoTramite)
         case 5:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p05", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p05", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p05", noTramite: TipoTramite)
         case 6:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p03", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p03", noTramite: TipoTramite)
         case 7:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p02", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p02", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p02", noTramite: TipoTramite)
         case 8:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p02", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p02", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p02", noTramite: TipoTramite)
         case 9:
-            sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p04", noTramite: TipoTramite)
+            //sendTramite(token: LoginToken, tramite: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs/p04", noTramite: TipoTramite)
+            sendTramite(token: LoginToken, tramite: "https://apis.fpfch.gob.mx/api/v1/procs/p04", noTramite: TipoTramite)
         default:
             break
         }
@@ -2167,7 +2177,8 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
         var Imagen = Imagen // Declarar Imagen como variable
        
         
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/files")!
         
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token) )"
@@ -2386,7 +2397,8 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
        
          let sem = DispatchSemaphore.init(value: 0)
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/config/mobile")!)
          request.httpMethod = "GET"
          request.addValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
 
@@ -2451,7 +2463,8 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
          var dataReceived: Array<String> = []
          let sem = DispatchSemaphore.init(value: 0)
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles/\(vehID)")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles/\(vehID)")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles/\(vehID)")!)
          request.httpMethod = "GET"
          request.addValue("application/json", forHTTPHeaderField: "Content-Type")
          request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

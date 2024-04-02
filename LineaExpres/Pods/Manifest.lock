@@ -7,9 +7,9 @@ PODS:
     - KZFileWatchers (~> 1.0.6)
     - Yams (~> 2.0.0)
   - SwiftGifOrigin (1.7.0)
-  - SwiftyRSA (1.5.0):
-    - SwiftyRSA/ObjC (= 1.5.0)
-  - SwiftyRSA/ObjC (1.5.0)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
   - Yams (2.0.0)
 
 DEPENDENCIES:
@@ -38,9 +38,9 @@ SPEC CHECKSUMS:
   SignaturePad: b0d6322a27e90fe3e7d55194606503f5dfacb077
   Stylist: 48a9d67a4e319b82b8a8efe682fd54875844c504
   SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
-  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   Yams: cb96472112d99e4b368f8dae9ab62e8a3eb8a3f9
 
-PODFILE CHECKSUM: 7b840ec5bdecbcf6f171e5527eb58232a4f14e25
+PODFILE CHECKSUM: 8e03f0c0bc231a6e07df0bb1c09491bc534ab612
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.2

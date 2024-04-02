@@ -171,7 +171,8 @@ class CrearCitaViewController: UIViewController {
         var dataReceived: Array<String> = []
         let sem = DispatchSemaphore.init(value: 0)
         
-        var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/available")!)
+        //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/available")!)
+        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/appointments/available")!)
         request.httpMethod = "POST"
         request.httpBody = jsonData
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -217,7 +218,8 @@ class CrearCitaViewController: UIViewController {
     func getCitaDate() {
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/appointments")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -285,10 +287,12 @@ class CrearCitaViewController: UIViewController {
     func setDate() {
         var endpointUrl: String = ""
         if MethodCita.contains("ChangeDate"){
-            endpointUrl = "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/change"
+            //endpointUrl = "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/change"
+            endpointUrl = "https://apis.fpfch.gob.mx/api/v1/appointments/change"
         }
         if MethodCita.contains("CreateDate") {
-            endpointUrl = "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/create"
+            //endpointUrl = "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/create"
+            endpointUrl = "https://apis.fpfch.gob.mx/api/v1/appointments/create"
         }
         
         print("Que pasooo \(MethodCita)")

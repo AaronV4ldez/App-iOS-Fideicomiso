@@ -12,6 +12,8 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var fullName: UITextField!
     @IBOutlet weak var emailInput: UITextField!
+    @IBOutlet weak var passwordTyped: UITextField!
+    @IBOutlet weak var passwordReTyped: UITextField!
     @IBOutlet weak var ladaInput: UILabel!
     @IBOutlet weak var numberInput: UITextField!
     
@@ -28,11 +30,15 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         fullName.tintColor = UIColor.black
         emailInput.tintColor = UIColor.black
         numberInput.tintColor = UIColor.black
+        passwordTyped.tintColor = UIColor.black
+        passwordReTyped.tintColor = UIColor.black
         
         
         fullName.applyTextFieldStyle()
         emailInput.applyTextFieldStyle()
         numberInput.applyTextFieldStyle()
+        passwordTyped.applyTextFieldStyle()
+        passwordReTyped.applyTextFieldStyle()
         
         ladaInput.layer.borderWidth = 1.0
         ladaInput.layer.borderColor = UIColor.black.cgColor
@@ -74,6 +80,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let emailString:String = emailInput.text!
         let numberString:String = numberInput.text!
         let ladaNumber:String = ladaInput.text!
+        let passwordString:String = passwordTyped.text!
+        let passwordReTyped:String = passwordReTyped.text!
+        
         var valor:Int = 0
         var lada = "+52"
         
@@ -113,7 +122,15 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 ladaInput.layer.borderWidth = 1
                 valor = 2
             }
+            if (passwordString.count < 8){
+                print("La contraseña debe de tener almenos 8 caracteres")
+                valor = 3
+            }
             
+            if passwordString != passwordReTyped {
+                print("La contraseña debe coincidir")
+                valor = 4
+            }
             
             if valor > 0 {
                 print("No podemos continuar")
@@ -121,7 +138,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             }
             
             
-            doRegister(fullName: fullNameString, Email: emailString, Number: numberString, Lada: lada)
+            doRegister(fullName: fullNameString, Email: emailString, Number: numberString, Lada: lada, Password: passwordString)
         }
     }
     
@@ -133,13 +150,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             }
         }
     
-    func doRegister(fullName: String, Email: String, Number: String, Lada: String) {
-        let json: [String: Any] = ["fullname": fullName, "email": Email, "phone": Number, "cc": Lada]
+    func doRegister(fullName: String, Email: String, Number: String, Lada: String, Password: String) {
+        let json: [String: Any] = ["fullname": fullName, "email": Email, "phone": Number, "cc": Lada, "password": Password]
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/signup")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/signup")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/signup")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         
@@ -161,13 +179,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                         self.MsgLabel.text = message
                         self.MsgLabel.isHidden = false
                         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "CodeSMSViewController")
-                        NotificationCenter.default.post(name: Notification.Name("email"), object: "\(Email),\(Number)")
+                        NotificationCenter.default.post(name: Notification.Name("email"), object: "\(Email),\(Number),\(Password)")
                         NotificationCenter.default.post(name: Notification.Name("message"), object: message)
                     }
                 }else {
                     DispatchQueue.main.async() {
                         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "CodeSMSViewController")
-                        NotificationCenter.default.post(name: Notification.Name("email"), object: "\(Email),\(Number)")
+                        NotificationCenter.default.post(name: Notification.Name("email"), object: "\(Email),\(Number),\(Password)")
                         NotificationCenter.default.post(name: Notification.Name("message"), object: message)
                     }
                 }
@@ -192,6 +210,7 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
     
     var phone = ""
     var mail = ""
+    var pass1 = ""
     
     var wrongNumber = false
     
@@ -245,7 +264,7 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
             }
             CodigoInput.layer.borderColor = greenColor.cgColor
             
-            doValidation(Code: CodigoText, Email: Email)
+            doValidation(Code: CodigoText, Email: Email, Password: pass1)
         }
         
        
@@ -264,10 +283,11 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
         generateNewCode(Email: mail, Phone: phone)
     }
     
-    func doValidation(Code:String, Email:String){
+    func doValidation(Code:String, Email:String, Password:String){
         let parameters: [String: Any] = ["email": Email, "activation_code": Code]
          
-         let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/validate")!
+         //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/validate")!
+         let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/validate")!
          
          let session = URLSession.shared
          var request = URLRequest(url: url)
@@ -302,8 +322,10 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
                  if message != nil {
                      DispatchQueue.main.async() {
                          
-                         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "successfullyViewController")
-                         NotificationCenter.default.post(name: Notification.Name("FinishMSG"), object: message!)
+                         /*NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "successfullyViewController")
+                         NotificationCenter.default.post(name: Notification.Name("FinishMSG"), object: message!)*/
+                         
+                         self.doLogin(email: Email, Password: self.pass1)
                      }
                  }
                  
@@ -330,7 +352,8 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
     func generateNewCode(Email:String, Phone:String){
         let parameters: [String: Any] = ["email": Email, "phone": Phone]
          
-         let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/newvcode")!
+         //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/newvcode")!
+         let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/newvcode")!
          
          let session = URLSession.shared
          var request = URLRequest(url: url)
@@ -380,6 +403,87 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
          task.resume()
     }
     
+    func doLogin(email:String, Password:String) {
+    
+        let json: [String: Any] = ["userlogin": email, "password": Password]
+
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+
+        // create post request
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/session/login")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/session/login")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        // insert json data to the request
+        request.httpBody = jsonData
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+            if let responseJSON = responseJSON as? [String: Any] {
+                print("Detalles de login \(responseJSON)")
+                
+                if responseJSON["name"] as? String == nil {
+                    let error: String? = responseJSON["message"] as? String
+                    if ((error?.contains("invalidas")) != nil) {
+                        print("Username es null")
+                        
+                        DispatchQueue.main.async() {
+                            //self.PasswordInput.layer.borderColor = self.redColor.cgColor
+                            //self.PasswordInput.layer.borderWidth = 1
+                        }
+                        
+                       
+                    }
+                    return
+                }
+                
+                
+                let UserName:String? = responseJSON["name"] as? String
+                let AccessToken:String? = responseJSON["access_token"] as? String
+                let UserSetPwd:String = String(responseJSON["user_set_pwd"] as? Int ?? 0)
+                let sentri:String = String(responseJSON["sentri"] as? String ?? "")
+                let sentri_exp_date:String = String(responseJSON["sentri_exp_date"] as? String ?? "")
+                
+                let fac_razon_social:String = String(responseJSON["fac_razon_social"] as? String ?? "")
+                let fac_dom_fiscal:String = String(responseJSON["fac_dom_fiscal"] as? String ?? "")
+                let fac_email:String = String(responseJSON["fac_email"] as? String ?? "")
+                let fac_telefono:String = String(responseJSON["fac_telefono"] as? String ?? "")
+                let fac_rfc:String = String(responseJSON["fac_rfc"] as? String ?? "")
+                let fac_cp:String = String(responseJSON["fac_cp"] as? String ?? "")
+                
+                
+                
+                print("Datos de fact")
+                
+                DB_Manager().addUser(EmailVal: email, NameVal: UserName!, LoginTokenVal: AccessToken!, UserSetPwdVal: UserSetPwd, Sentri: sentri, SentriFecha: sentri_exp_date)
+                DB_Manager().addBillingData(RazonSocial: fac_razon_social, RFC: fac_rfc, DomFiscal: fac_dom_fiscal, CP: fac_cp, Email: fac_email, Telefono: fac_telefono)
+                
+                if !UserSetPwd.contains("0") {
+                    DispatchQueue.main.async() {
+                        self.view.endEditing(true)
+                        NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "ProfileViewController")
+                    }
+                }else {
+                    DispatchQueue.main.async() {
+                        self.view.endEditing(true)
+                        NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "ProfileViewController")
+                    }
+                }
+                
+                
+                //let usuario:Array = DB_Manager().getUser()
+                //print(usuario)
+            }
+        }
+          task.resume()
+    }
+    
+    
     @IBAction func tapChooseMenuItem(_ sender: UITapGestureRecognizer) {
            dropDown.dataSource = ["MEX", "USA"]
            
@@ -404,18 +508,21 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
         
         print("Se supone es lo de text: \(text)")
         
-        if components.count >= 2 {
+        if components.count >= 3 {
             let email = components[0].trimmingCharacters(in: .whitespaces)
             let phoneNumber = components[1].trimmingCharacters(in: .whitespaces)
+            let passw = components [2].trimmingCharacters(in: .whitespaces)
             
             // Realiza las acciones necesarias con el email y el número de teléfono
             print("Email: \(email)")
             print("Número de teléfono: \(phoneNumber)")
+            print("contraseña: \(passw)")
             
             correoLabel.text = email
             phoneLabel.text = phoneNumber
             mail = email
             phone = phoneNumber
+            pass1 = passw
         }
     }
     

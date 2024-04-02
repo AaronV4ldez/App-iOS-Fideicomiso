@@ -139,7 +139,8 @@ class DatosFacturacionViewController: UIViewController {
         
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/fac")!)
+        //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/fac")!)
+        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/user/fac")!)
         request.httpMethod = "POST"
         request.httpBody = jsonData
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

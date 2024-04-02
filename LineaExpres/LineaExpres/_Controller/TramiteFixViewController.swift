@@ -252,7 +252,8 @@ class TramiteFixViewController: UIViewController, UIImagePickerControllerDelegat
         var Imagen = Imagen
         var mimeType = "image/jpeg"
         
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/files")!
         
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token) )"
@@ -323,7 +324,8 @@ class TramiteFixViewController: UIViewController, UIImagePickerControllerDelegat
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/saveid")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/saveid")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/saveid")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         

@@ -121,7 +121,8 @@ class BanortePaymentViewController: UIViewController, WKNavigationDelegate {
     
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             if ChecaInternet.Connection() {
-                let url = URL(string:"https://lineaexpressapp.desarrollosenlanube.net/pagosmovil/#/\(self.Tag)/\(self.Valor)/\(self.TIPOP)")
+                //let url = URL(string:"https://lineaexpressapp.desarrollosenlanube.net/pagosmovil/#/\(self.Tag)/\(self.Valor)/\(self.TIPOP)")
+                let url = URL(string:"https://apis.fpfch.gob.mx/pagosmovil/#/\(self.Tag)/\(self.Valor)/\(self.TIPOP)")
                 let req = URLRequest(url:url!)
                 self.webView!.load(req)
             } else {

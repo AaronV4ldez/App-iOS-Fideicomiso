@@ -670,7 +670,7 @@ public class vistaVehRecargar {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         var res = 0
         
-        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/\(tag)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/(tag)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")

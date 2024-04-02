@@ -4,51 +4,53 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DropDown.xcscheme_^#shared#^_</key>
+		<key>DropDown.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>KZFileWatchers.xcscheme_^#shared#^_</key>
+		<key>KZFileWatchers.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-LineaExpres.xcscheme_^#shared#^_</key>
+		<key>Pods-LineaExpres.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SignaturePad.xcscheme_^#shared#^_</key>
+		<key>SignaturePad.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Stylist.xcscheme_^#shared#^_</key>
+		<key>Stylist.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SwiftGifOrigin.xcscheme_^#shared#^_</key>
+		<key>SwiftGifOrigin.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>SwiftyRSA.xcscheme_^#shared#^_</key>
+		<key>SwiftyRSA.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Yams.xcscheme_^#shared#^_</key>
+		<key>Yams.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>iCarousel.xcscheme_^#shared#^_</key>
+		<key>iCarousel.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

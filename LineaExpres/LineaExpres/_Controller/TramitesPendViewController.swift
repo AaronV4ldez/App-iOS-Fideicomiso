@@ -171,7 +171,8 @@ class TramitesPendViewController: UIViewController {
          var dataReceived: Array<String> = []
          let sem = DispatchSemaphore.init(value: 0)
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/procs")!)
          request.httpMethod = "GET"
          request.addValue("application/json", forHTTPHeaderField: "Content-Type")
          request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -220,7 +221,8 @@ class TramitesPendViewController: UIViewController {
         var dataReceived: Array<String> = []
         let sem = DispatchSemaphore.init(value: 0)
         
-        var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files?id_proc=\(id_proc)&id_proc_type=\(id_proc_type)")!)
+        //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files?id_proc=\(id_proc)&id_proc_type=\(id_proc_type)")!)
+        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/files?id_proc=\(id_proc)&id_proc_type=\(id_proc_type)")!)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

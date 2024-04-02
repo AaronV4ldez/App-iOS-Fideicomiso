@@ -90,7 +90,8 @@ class NotasViewController: UIViewController {
     
     
     func createWebView() {
-        guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile") else {
+        //guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile") else {
+        guard let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/config/mobile") else {
             print("Error: Invalid URL")
             return
         }

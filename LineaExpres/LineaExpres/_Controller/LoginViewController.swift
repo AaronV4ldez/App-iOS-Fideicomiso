@@ -94,7 +94,8 @@ class LoginViewController: UIViewController {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/session/login")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/session/login")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/session/login")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 

@@ -74,7 +74,8 @@ class PaymentViewController: UIViewController {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/stripe/createpi")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/stripe/createpi")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/stripe/createpi")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -146,7 +147,8 @@ class PaymentViewController: UIViewController {
     
     func confirmarOrden(TipoConfirmacion: String) {
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/stripe/confirm/TP\(Tag)?payment_intent=\(payment_intent)&payment_intent_client_secret=\(payment_intent_client_secret)&redirect_status=\(TipoConfirmacion)")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/stripe/confirm/TP\(Tag)?payment_intent=\(payment_intent)&payment_intent_client_secret=\(payment_intent_client_secret)&redirect_status=\(TipoConfirmacion)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/stripe/confirm/TP\(Tag)?payment_intent=\(payment_intent)&payment_intent_client_secret=\(payment_intent_client_secret)&redirect_status=\(TipoConfirmacion)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

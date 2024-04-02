@@ -118,7 +118,8 @@ class ChangePassViewController: UIViewController {
 
         // create post request
         //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/resetpass")!
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/changepass")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/changepass")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/changepass")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

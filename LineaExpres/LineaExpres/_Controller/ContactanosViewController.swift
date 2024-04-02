@@ -73,7 +73,8 @@ class ContactanosViewController: UIViewController, UITextFieldDelegate {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/contact")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/contact")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/contact")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

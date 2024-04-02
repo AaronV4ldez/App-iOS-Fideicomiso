@@ -272,7 +272,8 @@ class EscogerCantidadViewController: UIViewController {
        
          let sem = DispatchSemaphore.init(value: 0)
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/config/mobile")!)
          request.httpMethod = "GET"
          request.addValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
 

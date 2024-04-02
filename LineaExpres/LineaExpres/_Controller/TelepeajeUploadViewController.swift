@@ -147,7 +147,8 @@ class TelepeajeUploadViewController: UIViewController {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

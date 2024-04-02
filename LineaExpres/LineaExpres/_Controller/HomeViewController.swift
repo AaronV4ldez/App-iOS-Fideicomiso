@@ -62,7 +62,8 @@ class HomeViewController: UIViewController {
     
     func getWeatherInfo() {
         DispatchQueue.global().async {
-            guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/clima") else {
+            //guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/clima") else {
+            guard let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/clima") else {
                 print("Error: Invalid URL")
                 return
             }
@@ -147,7 +148,8 @@ class HomeViewController: UIViewController {
     
     func createWebView() {
         DispatchQueue.global().async {
-            guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile") else {
+            //guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile") else {
+            guard let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/config/mobile") else {
                 print("Error: Invalid URL")
                 return
             }
@@ -173,7 +175,8 @@ class HomeViewController: UIViewController {
     
     func setYoutubeonWebView() {
         DispatchQueue.global().async {
-            guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile") else {
+            //guard let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/config/mobile") else {
+            guard let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/config/mobile") else {
                 print("Error: Invalid URL")
                 return
             }

@@ -137,7 +137,8 @@ class ProfileViewController: UIViewController {
          
        
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles")!)
          request.httpMethod = "GET"
          request.addValue("application/json", forHTTPHeaderField: "Content-Type")
          request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -249,7 +250,8 @@ class ProfileViewController: UIViewController {
     func getTramites() {
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/procs")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/procs")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -324,7 +326,8 @@ class ProfileViewController: UIViewController {
     func checkFilesStatus(id_proc:Int, id_proc_type:Int) {
     
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files?id_proc=\(id_proc)&id_proc_type=\(id_proc_type)")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/files?id_proc=\(id_proc)&id_proc_type=\(id_proc_type)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/files?id_proc=\(id_proc)&id_proc_type=\(id_proc_type)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -383,7 +386,8 @@ class ProfileViewController: UIViewController {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/saveid")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/saveid")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/saveid")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
@@ -427,7 +431,8 @@ class ProfileViewController: UIViewController {
         let session = URLSession.shared
          let sem = DispatchSemaphore.init(value: 0)
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/user")!)
          request.httpMethod = "DELETE"
          request.addValue("application/json", forHTTPHeaderField: "Content-Type")
          request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

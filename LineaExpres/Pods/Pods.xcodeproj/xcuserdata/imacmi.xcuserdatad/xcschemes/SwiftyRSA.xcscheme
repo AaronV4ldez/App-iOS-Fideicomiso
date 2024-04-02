@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1300"
+   LastUpgradeVersion = "1500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C8954AF0F75B5BBA9F10A0EAFED66D9"
-               BuildableName = "Stylist.framework"
-               BlueprintName = "Stylist"
+               BlueprintIdentifier = "92A1C13902E7ACDA3ABB5BA1FEACC86C"
+               BuildableName = "SwiftyRSA.framework"
+               BlueprintName = "SwiftyRSA"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

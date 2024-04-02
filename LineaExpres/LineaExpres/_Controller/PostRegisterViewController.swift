@@ -91,7 +91,8 @@ class PostRegisterViewController: UIViewController {
          
        
 
-         var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles")!)
+         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/vehicles")!)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles")!)
          request.httpMethod = "GET"
          request.addValue("application/json", forHTTPHeaderField: "Content-Type")
          request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -200,7 +201,8 @@ class LineaExpresAddVehViewController: UIViewController, UITextFieldDelegate  {
         
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/le/user/\(sentri)/\(user)")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/le/user/\(sentri)/\(user)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/le/user/\(sentri)/\(user)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -250,7 +252,8 @@ class LineaExpresAddVehViewController: UIViewController, UITextFieldDelegate  {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
         // create post request
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/sentri")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/user/sentri")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/user/sentri")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -456,7 +459,8 @@ class TelepeajeAddVehViewController: UIViewController {
     
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/tags/exists/\(tag)")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/tags/exists/\(tag)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/\(tag)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
@@ -650,7 +654,8 @@ class ADPAddVehViewController: UIViewController {
     
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         
-        let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/tags/exists/\(tag)")!
+        //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/tags/exists/\(tag)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/\(tag)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
