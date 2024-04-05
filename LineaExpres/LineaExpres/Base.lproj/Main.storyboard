@@ -6939,7 +6939,7 @@ electrónico que usted proporcione.</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="536"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lh1-zd-nZe">
-                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="503.66666666666669"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="384" height="523.66666666666663"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbZ-hR-flQ" userLabel="Divisor">
                                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="3"/>
@@ -7043,12 +7043,12 @@ electrónico que usted proporcione.</string>
                                                                         </constraints>
                                                                     </view>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="acT-4K-nhH" userLabel="Generales">
-                                                                        <rect key="frame" x="0.0" y="281" width="384" height="222.66666666666663"/>
+                                                                        <rect key="frame" x="0.0" y="281" width="384" height="242.66666666666663"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aes-a0-iw3">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="34.333333333333336"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="filled" title="TELEPEAJE">
+                                                                                <buttonConfiguration key="configuration" style="filled" title="REGISTRA TU TAG DE TELEPEAJE">
                                                                                     <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -7058,9 +7058,9 @@ electrónico que usted proporcione.</string>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-7U-LPO">
-                                                                                <rect key="frame" x="0.0" y="39.333333333333371" width="384" height="34.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="39.333333333333371" width="384" height="54.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="filled" title="ACCESO DIGITAL PEATONAL">
+                                                                                <buttonConfiguration key="configuration" style="filled" title="REGISTRA TU TARJETA DE ACCESO DIGITAL PEATONAL">
                                                                                     <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -7070,9 +7070,9 @@ electrónico que usted proporcione.</string>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agn-h5-onr">
-                                                                                <rect key="frame" x="0.0" y="78.666666666666629" width="384" height="34.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="98.666666666666629" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
-                                                                                <buttonConfiguration key="configuration" style="filled" title="LÍNEA EXPRÉS">
+                                                                                <buttonConfiguration key="configuration" style="filled" title="REGISTRA TUS VEHICULOS DE LÍNEA EXPRÉS">
                                                                                     <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="baseBackgroundColor" name="light_blueColor"/>
@@ -7082,7 +7082,7 @@ electrónico que usted proporcione.</string>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzN-yB-zvt">
-                                                                                <rect key="frame" x="0.0" y="117.99999999999999" width="384" height="34.333333333333329"/>
+                                                                                <rect key="frame" x="0.0" y="138" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="BORRAR CUENTA">
                                                                                     <backgroundConfiguration key="background" cornerRadius="15" image="btnbg2"/>
@@ -7094,13 +7094,13 @@ electrónico que usted proporcione.</string>
                                                                                 </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Si aún no tienes Línea Exprés" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-R0-2YJ">
-                                                                                <rect key="frame" x="0.0" y="157.33333333333337" width="384" height="26"/>
+                                                                                <rect key="frame" x="0.0" y="177.33333333333337" width="384" height="26"/>
                                                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
                                                                                 <color key="textColor" name="BlackGlobal"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmX-vU-ncQ">
-                                                                                <rect key="frame" x="0.0" y="188.33333333333337" width="384" height="34.333333333333343"/>
+                                                                                <rect key="frame" x="0.0" y="208.33333333333337" width="384" height="34.333333333333343"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="filled" title="¡REGISTRATE AQUÍ!">
                                                                                     <backgroundConfiguration key="background" cornerRadius="15" image="fondo gradient1"/>

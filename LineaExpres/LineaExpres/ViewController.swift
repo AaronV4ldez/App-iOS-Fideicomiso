@@ -713,16 +713,16 @@ public class vistaVehRecargar {
         
         let acceptButton = UIButton(type: .system)
         acceptButton.setTitle("Aceptar", for: .normal)
-        acceptButton.font = UIFont(name:"AvenirNext-Bold", size: 16.0)
+        acceptButton.titleLabel?.font = UIFont(name:"AvenirNext-Bold", size: 16.0)
         acceptButton.addTarget(self, action: #selector(acceptButtonTapped), for: .touchUpInside)
-        acceptButton.backgroundColor = .systemGreen // Color de fondo verde
-        acceptButton.setTitleColor(.gray, for: .normal) // Color del texto blanco
+        acceptButton.backgroundColor = .gray // Color de fondo verde
+        acceptButton.setTitleColor(.white, for: .normal) // Color del texto blanco
         acceptButton.layer.cornerRadius = 12 // Borde redondeado
         acceptButton.accessibilityLabel = "\(id)"
         
         let cancelButton = UIButton(type: .system)
         cancelButton.setTitle("Cancelar", for: .normal)
-        cancelButton.font = UIFont(name:"AvenirNext-Bold", size: 16.0)
+        cancelButton.titleLabel?.font = UIFont(name:"AvenirNext-Bold", size: 16.0)
         cancelButton.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
         cancelButton.backgroundColor = .gray // Color de fondo rojo
         cancelButton.setTitleColor(.white, for: .normal) // Color del texto blanco
