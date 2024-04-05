@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "low_image_loader.png",
+      "filename" : "image_loader.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

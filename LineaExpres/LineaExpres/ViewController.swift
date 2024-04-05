@@ -413,11 +413,11 @@ public class vistaVehRecargar {
         let ctl_user_id:String = data[11]
         let ctl_id:String = data[12]
         let anio:String = data[13]
-        let loginToken:String = data[14]
-        tipoLinea = Int(data[15])!
+        let id:String = data[14]
+        let loginToken:String = data[15]
+        tipoLinea = Int(data[16])!
         
         
-       
         var Top:UIStackView = UIStackView()
         var Bottom:UIStackView = UIStackView()
         var BottomTop:UIStackView = UIStackView()
@@ -471,7 +471,7 @@ public class vistaVehRecargar {
             })
         }
         
-       
+        
         
         let Titulo:UILabel = UILabel()
         Titulo.text = "\(MarcaVeh) \(Linea)"
@@ -481,6 +481,9 @@ public class vistaVehRecargar {
         
         let Tag:UILabel = UILabel()
         Tag.text = "Tag: \(TagVeh)"
+        
+        let Idtxt:UILabel = UILabel()
+        Idtxt.text = "Tag: \(id)"
         
         let tipoContrato:UILabel = UILabel()
         
@@ -506,16 +509,18 @@ public class vistaVehRecargar {
                 }
             }
         }
-            
+        
         Titulo.font = UIFont(name:"AvenirNext-Bold", size: 18.0)
         Placa.font = UIFont(name:"AvenirNext-Bold", size: 14.0)
         Tag.font = UIFont(name:"merriweather-regular", size: 15.0)
+        Idtxt.font = UIFont(name:"merriweather-regular", size: 15.0)
         tipoContrato.font = UIFont(name:"merriweather-regular", size: 15.0)
         
-  
+        
         Titulo.textColor = .black
         Placa.textColor = .gray
         Tag.textColor = .black
+        Idtxt.textColor = .black
         tipoContrato.textColor = .black
         
         
@@ -528,7 +533,7 @@ public class vistaVehRecargar {
         BottomTop = UIStackView()
         BottomTop.axis = .vertical
         BottomTop.distribution = .fillEqually
-      
+        
         BottomTop.layer.masksToBounds = true
         BottomTop.heightAnchor.constraint(equalToConstant: 140).isActive = true
         
@@ -542,7 +547,7 @@ public class vistaVehRecargar {
         Spacer = UIStackView()
         BottomTop.addArrangedSubview(Spacer)
         BottomTop.addArrangedSubview(tipoContrato)
-
+        
         
         BottomBottom = UIStackView()
         BottomBottom.axis = .vertical
@@ -551,31 +556,40 @@ public class vistaVehRecargar {
         BottomBottom.spacing = 5
         BottomBottom.layer.masksToBounds = true
         
-       
+        
         Bottom.addArrangedSubview(BottomTop)
         
         
         var arr:Array<String> = Array()
         arr.append("Recargar") // 0
         arr.append("Ver mis cruces") // 1
+        arr.append("Eliminar Tag") // 2
         
         for i in 0..<(arr.count) {
             let tipoTramite:UIButton = UIButton(type: .roundedRect)
             tipoTramite.setTitle(arr[i], for: .normal)
+            print("Este es el valor del botón: \(i)")
             
             
             tipoTramite.setTitleColor(.black, for: .normal)
             tipoTramite.layer.masksToBounds = true
             
             //qtue == Tipo de vehiculo; 0 = Telepeaje, 1 = Linea Expres, 2 = Acceso Digital P.
-           
+            
             if qtue.contains("0") {
                 if i == 1 {
                     tipoTramite.isHidden = true
                 }
-                tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea) "
-                tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
-
+                if i == 0 {
+                    tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea) "
+                    tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                }
+                if i == 2 {
+                    tipoTramite.accessibilityLabel = "\(id)"
+                    tipoTramite.addTarget(self, action: #selector(didBtnEliminartag(_ :)), for: .touchUpInside)
+                }
+                
+                
             }
             if qtue.contains("1") {
                 if i == 0 {
@@ -626,13 +640,24 @@ public class vistaVehRecargar {
                     tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
                     tipoTramite.addTarget(self, action: #selector(didBtnCruces(_ :)), for: .touchUpInside)
                 }
+                
+                if i == 2{
+                    tipoTramite.isHidden = true
+                }
             }
             if qtue.contains("2") {
                 if i == 1 {
                     tipoTramite.isHidden = true
                 }
-                tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
-                tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                if i == 0 {
+                    tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
+                    tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                }
+                
+                if i == 2{
+                    tipoTramite.accessibilityLabel = "\(id)"
+                    tipoTramite.addTarget(self, action: #selector(didBtnEliminartag(_ :)), for: .touchUpInside)
+                }
             }
             
             tipoTramite.backgroundColor = .black
@@ -663,7 +688,78 @@ public class vistaVehRecargar {
         let tag:String? = sender.accessibilityLabel
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object:"CrucesViewController")
         NotificationCenter.default.post(name: Notification.Name("CrucesInfo"), object:tag!)
+        print("Hola soy el boton ekisde")
     }
+    
+    
+    @objc func didBtnEliminartag(_ sender: UIButton){
+        
+        let id = sender.accessibilityLabel ?? ""
+        print("Botón eliminar y el id seleccionado es: \(id)")
+        
+        let label = UILabel()
+        label.font = UIFont(name:"AvenirNext-Bold", size: 22.0)
+        label.text = "¿Estás seguro?"
+        label.textAlignment = .center
+        label.textColor = .black
+        
+        let cuerpoh = UILabel()
+        cuerpoh.font = UIFont(name:"AvenirNext", size: 18.0)
+        cuerpoh.numberOfLines = 0
+        cuerpoh.sizeToFit()
+        cuerpoh.text = "Estás a punto de borrar tu TAG, ésta acción no se puede deshacer."
+        cuerpoh.textAlignment = .center
+        cuerpoh.textColor = .black
+        
+        let acceptButton = UIButton(type: .system)
+        acceptButton.setTitle("Aceptar", for: .normal)
+        acceptButton.font = UIFont(name:"AvenirNext-Bold", size: 16.0)
+        acceptButton.addTarget(self, action: #selector(acceptButtonTapped), for: .touchUpInside)
+        acceptButton.backgroundColor = .systemGreen // Color de fondo verde
+        acceptButton.setTitleColor(.gray, for: .normal) // Color del texto blanco
+        acceptButton.layer.cornerRadius = 12 // Borde redondeado
+        acceptButton.accessibilityLabel = "\(id)"
+        
+        let cancelButton = UIButton(type: .system)
+        cancelButton.setTitle("Cancelar", for: .normal)
+        cancelButton.font = UIFont(name:"AvenirNext-Bold", size: 16.0)
+        cancelButton.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
+        cancelButton.backgroundColor = .gray // Color de fondo rojo
+        cancelButton.setTitleColor(.white, for: .normal) // Color del texto blanco
+        cancelButton.layer.cornerRadius = 12 // Borde redondeado
+        
+        // Creamos un stack view horizontal para los botones
+        let buttonStackView = UIStackView(arrangedSubviews: [acceptButton, cancelButton])
+        buttonStackView.axis = .horizontal
+        buttonStackView.spacing = 20
+        buttonStackView.distribution = .fillEqually
+        
+        // Creamos un stack view vertical para el contenido completo del modal
+        let stackView = UIStackView(arrangedSubviews: [label, cuerpoh, buttonStackView])
+        stackView.axis = .vertical
+        stackView.spacing = 20
+        stackView.distribution = .fillEqually
+        
+        // Presenta el modal desde el controlador de vista actual
+        if let viewController = UIApplication.shared.windows.first?.rootViewController {
+            let modalViewController = UIViewController()
+            modalViewController.view.addSubview(stackView)
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+            
+            // Establece el fondo blanco para el modal
+            modalViewController.view.backgroundColor = .white
+            
+            viewController.present(modalViewController, animated: true, completion: nil)
+            
+            // Configura las restricciones del stack view
+            NSLayoutConstraint.activate([
+                stackView.centerXAnchor.constraint(equalTo: modalViewController.view.centerXAnchor),
+                stackView.centerYAnchor.constraint(equalTo: modalViewController.view.centerYAnchor),
+                stackView.leadingAnchor.constraint(equalTo: modalViewController.view.leadingAnchor, constant: 40),
+                stackView.trailingAnchor.constraint(equalTo: modalViewController.view.trailingAnchor, constant: -40)
+            ])
+        }
+    }// didbtn eliminar tag
     
     func verifyTag(tag: String, loginToken: String, completion: @escaping (Result<Int, Error>) -> Void) {
         var json: [String: Any] = [:]
@@ -720,14 +816,105 @@ public class vistaVehRecargar {
               let window = windowScene.windows.first else {
             return
         }
-
+        
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
-
+        
         window.rootViewController?.present(alertController, animated: true, completion: nil)
     }
+    
+    @objc func acceptButtonTapped(_ sender: UIButton) {
 
+        print("Aceptar")
+        
+        // Desempaquetar opcionalmente sender.accessibilityLabel
+         let id = sender.accessibilityLabel ?? ""
+            print("Error: No se pudo obtener el ID.")
+  
+        
+        // Imprime el ID desempaquetado
+        print("Aceptar con ID: \(id)")
+        
+        // Llama a la función postDeleteTag con el ID desempaquetado
+        postDeleteTag(id: id)
+        if let presentingViewController = UIApplication.shared.windows.first?.rootViewController {
+            // Cierra el modal
+            presentingViewController.dismiss(animated: true, completion: nil)
+        } else {
+            // Si no se puede encontrar el controlador de vista que presentó el modal, imprime un mensaje de error
+            print("Error: No se puede encontrar el controlador de vista que presentó el modal.")
+        }
+    }//acpcept button
+    
+    
+    @objc func cancelButtonTapped(){
+        print("Cancelar")
+        // Obtén una referencia al controlador de vista que presentó el modal
+        if let presentingViewController = UIApplication.shared.windows.first?.rootViewController {
+            // Cierra el modal
+            presentingViewController.dismiss(animated: true, completion: nil)
+        } else {
+            // Si no se puede encontrar el controlador de vista que presentó el modal, imprime un mensaje de error
+            print("Error: No se puede encontrar el controlador de vista que presentó el modal.")
+        }
+    }//cancel button
+    
+    var LoginToken:String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2OSwibmFtZSI6IkFhclx1MDBmM24gVmFsZGV6IEdhcmNpYSIsImV4cCI6MTcwNDMwNjI4Mn0.0fgYcdqr0cVl3MChdQIrkk1P3jw37hTp61EqYB2n2NQ"
+        
+    func postDeleteTag(id: String){
+        
+        print("el id mandado a la api es \(id)")
+        let session = URLSession.shared
+         let sem = DispatchSemaphore.init(value: 0)
+         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles/\(id)")!)
+         request.httpMethod = "DELETE"
+         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
+
+           let task = session.dataTask(with: request) { data, response, error in
+               defer { sem.signal() }
+
+               if let error = error {
+                   print("Error -> \(error)")
+                   return
+               }
+
+               if let data = data, let string = String(data: data, encoding: .utf8) {
+                   
+                   if let data = string.data(using: .utf8) {
+                       let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                       if let responseJSON = responseJSON as? [String: Any] {
+                           print(responseJSON)
+                           
+                           let message:String? = responseJSON["message"] as? String
+                           if message != nil {
+                               if (message!.contains("Vehículo eliminado") || message!.contains("La petición la realizó un usuario no válido.")) {
+                                   DispatchQueue.main.async {
+                                       NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "ProfileViewController")
+                                   }
+                                   
+                               }
+                               DispatchQueue.main.async {
+                                   //self.showAlert(title: "Línea Exprés", message: message!)
+                               }
+
+                               
+                           }
+                       } else {
+                           print("Error: Could not convert JSON string to")
+                       }
+                   }
+                   
+               }
+           }
+
+         task.resume()
+
+         // This line will wait until the semaphore has been signaled
+         // which will be once the data task has completed
+         sem.wait()
+    }
 }
 
 

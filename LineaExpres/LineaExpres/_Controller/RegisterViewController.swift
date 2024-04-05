@@ -500,7 +500,7 @@ class CodeSMSViewController: UIViewController, UITextFieldDelegate {
                
            }
        }
-    
+
     @objc func didGetNotification(_ notification: Notification) {
         let text:String = notification.object as! String
         let components = text.components(separatedBy: ",")

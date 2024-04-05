@@ -2115,7 +2115,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-Po-hpP">
-                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2760,7 +2760,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="0.0" y="686" width="384" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-cJ-1Rr">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="avv-oJ-AMQ"/>
                                                 </constraints>
@@ -2775,7 +2775,7 @@ electrónico que usted proporcione.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-mT-Iiq">
-                                                <rect key="frame" x="0.0" y="40" width="384" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xuG-tH-Ylh"/>
                                                 </constraints>
@@ -2972,7 +2972,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="Dtp-ky-cMf">
-                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3003,10 +3003,10 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ijo-xt-WPL">
-                                                <rect key="frame" x="0.0" y="205" width="354" height="200"/>
+                                                <rect key="frame" x="0.0" y="205" width="354" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis vehículos de Telepeaje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSc-yk-gov">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="BlackGlobal"/>
                                                         <nil key="highlightedColor"/>
@@ -3018,10 +3018,10 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-90-R22">
-                                                <rect key="frame" x="0.0" y="410" width="354" height="90"/>
+                                                <rect key="frame" x="0.0" y="300" width="354" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceso Digital Peatonal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8g-3D-qk5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="BlackGlobal"/>
                                                         <nil key="highlightedColor"/>
@@ -3459,7 +3459,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="1fX-bK-mXz">
-                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3778,7 +3778,7 @@ electrónico que usted proporcione.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelepeajeImg" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-dP-h9o">
-                                        <rect key="frame" x="19" y="127" width="346" height="165"/>
+                                        <rect key="frame" x="19" y="127" width="346" height="110.33333333333331"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe o escanea tu TAG aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o07-DR-lgq">
                                         <rect key="frame" x="72" y="302" width="241" height="34"/>
@@ -3793,7 +3793,7 @@ electrónico que usted proporcione.</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktY-gI-tbZ">
-                                        <rect key="frame" x="110" y="349" width="164" height="35"/>
+                                        <rect key="frame" x="110" y="403.66666666666663" width="164" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="164" id="2gZ-zc-yb9"/>
                                         </constraints>
@@ -4815,24 +4815,24 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-jQ-QbZ">
-                                        <rect key="frame" x="0.0" y="410" width="332" height="200"/>
+                                        <rect key="frame" x="0.0" y="410" width="332" height="177"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SkQ-xW-dKP">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-02-3jw">
-                                                        <rect key="frame" x="0.0" y="90" width="166" height="20"/>
+                                                        <rect key="frame" x="0.0" y="78.666666666666629" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-nh-IDd">
-                                                        <rect key="frame" x="166" y="0.0" width="166" height="200"/>
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="177"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hj-Lc-fST">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -4854,24 +4854,24 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqB-Nt-7k0">
-                                        <rect key="frame" x="0.0" y="615" width="332" height="177"/>
+                                        <rect key="frame" x="0.0" y="592" width="332" height="200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-vb-MGk">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQU-Mj-eqz">
-                                                        <rect key="frame" x="0.0" y="78.666666666666629" width="166" height="20"/>
+                                                        <rect key="frame" x="0.0" y="90" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="60X-YM-aJw">
-                                                        <rect key="frame" x="166" y="0.0" width="166" height="177"/>
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-Td-xh9">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -4984,7 +4984,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-ZC-lc3">
-                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5219,7 +5219,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" name="PlecaColor"/>
+                        <color key="backgroundColor" red="0.25098040700000002" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="q7P-Va-HD1" firstAttribute="top" secondItem="RN7-TN-gnY" secondAttribute="bottom" id="8Dk-vA-vIt"/>
                             <constraint firstItem="q7P-Va-HD1" firstAttribute="leading" secondItem="sap-Ik-sXI" secondAttribute="leadingMargin" id="ZkE-mR-oJg"/>
@@ -6156,7 +6156,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="PhK-m7-STB">
-                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6765,7 +6765,7 @@ electrónico que usted proporcione.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ADP" translatesAutoresizingMaskIntoConstraints="NO" id="bG0-RH-ykF">
-                                        <rect key="frame" x="19" y="127" width="346" height="165"/>
+                                        <rect key="frame" x="19" y="127" width="346" height="110.33333333333331"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu Número de Tarjeta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrY-VK-NfD">
                                         <rect key="frame" x="72" y="302" width="241" height="34"/>
@@ -6780,7 +6780,7 @@ electrónico que usted proporcione.</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-8V-ePh">
-                                        <rect key="frame" x="110" y="349" width="164" height="35"/>
+                                        <rect key="frame" x="110" y="403.66666666666663" width="164" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="164" id="a47-iL-PFB"/>
                                         </constraints>
@@ -7183,7 +7183,7 @@ electrónico que usted proporcione.</string>
                                                             <backgroundConfiguration key="background" cornerRadius="15"/>
                                                             <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="CancelarProcesoBorradoCuentaBtn:" destination="SQP-AF-f3H" eventType="touchUpInside" id="EKO-0Q-TtK"/>
@@ -7196,7 +7196,7 @@ electrónico que usted proporcione.</string>
                                                             <backgroundConfiguration key="background" cornerRadius="15"/>
                                                             <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="baseBackgroundColor" name="light_blueColor"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="BorrarCuentaBtn:" destination="SQP-AF-f3H" eventType="touchUpInside" id="zbQ-Bf-VzQ"/>
@@ -7265,17 +7265,17 @@ electrónico que usted proporcione.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="ADP" width="426.66665649414062" height="286.66665649414062"/>
+        <image name="ADP" width="147" height="110.33333587646484"/>
         <image name="CameraBtn" width="332.66665649414062" height="142"/>
         <image name="LineaExpresImg" width="104" height="67"/>
         <image name="SplashScreen" width="618" height="1305"/>
-        <image name="TelepeajeImg" width="360" height="240"/>
-        <image name="btnbg2" width="1600" height="647"/>
+        <image name="TelepeajeImg" width="147" height="110.33333587646484"/>
+        <image name="btnbg2" width="1640" height="664"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
-        <image name="fondo gradient1" width="1600" height="647"/>
+        <image name="fondo gradient1" width="1640" height="664"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="humidity" catalog="system" width="128" height="101"/>
-        <image name="image_loader" width="400" height="400"/>
+        <image name="image_loader" width="1024" height="1024"/>
         <image name="menu_icon" width="30" height="30"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
@@ -7316,9 +7316,6 @@ electrónico que usted proporcione.</string>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -71,6 +71,9 @@ class VehicleViewController: UIViewController {
         if (data.count != 0) {
             for i in 0..<(data.count) {
                 let Vehiculos = data[i].components(separatedBy: "∑")
+                for valueId in Vehiculos{
+                    print("Result: \(Vehiculos)")
+                }
             
                 let tipoLinea:Int = Int(Vehiculos[0])!
                 let MarcaVeh:String = Vehiculos[1]
@@ -85,6 +88,7 @@ class VehicleViewController: UIViewController {
                 let ctl_user_id:String = Vehiculos[10]
                 let ctl_id:String = Vehiculos[11]
                 let anio:String = Vehiculos[12]
+                let id:String = Vehiculos[13]
                 
                 var a:UIStackView = UIStackView()
                 a.layer.masksToBounds = true
@@ -93,7 +97,7 @@ class VehicleViewController: UIViewController {
                 if tipoLinea == 1 {
                     tamañoLinea = tamañoLinea+heig
                     LineaExpresView.isHidden = false
-                    let datos = [String(heig) , imgurl, MarcaVeh, Linea, PlacasVeh, TagVeh, ctl_contract_type, SaldoVeh, clt_expiration_date, ctl_stall_id, "1", ctl_user_id, ctl_id, anio, LoginToken, String(tipoLinea)]
+                    let datos = [String(heig) , imgurl, MarcaVeh, Linea, PlacasVeh, TagVeh, ctl_contract_type, SaldoVeh, clt_expiration_date, ctl_stall_id, "1", ctl_user_id, ctl_id, anio, id, LoginToken, String(tipoLinea)]
                     
                     a = vistaVehiculo.generarVistaVehiculos(conDatos: datos)
                     
@@ -104,7 +108,7 @@ class VehicleViewController: UIViewController {
                     
                     tamañoTele = tamañoTele+heig
                     TelepeajeView.isHidden = false
-                    let datos = [String(heig) , imgurl, MarcaVeh, Linea, PlacasVeh, TagVeh, ctl_contract_type, SaldoVeh, clt_expiration_date, ctl_stall_id, "0", ctl_user_id, ctl_id, anio, LoginToken, String(tipoLinea)]
+                    let datos = [String(heig) , imgurl, MarcaVeh, Linea, PlacasVeh, TagVeh, ctl_contract_type, SaldoVeh, clt_expiration_date, ctl_stall_id, "0", ctl_user_id, ctl_id, anio, id, LoginToken, String(tipoLinea)]
                    
                     let a = vistaVehiculo.generarVistaVehiculos(conDatos: datos)
                     
@@ -194,8 +198,9 @@ class VehicleViewController: UIViewController {
                         let ctl_user_id: String? = jsonArray[i]["ctl_user_id"] as? String ?? "undefined"
                         let ctl_id: String? = jsonArray[i]["ctl_id"] as? String ?? "undefined"
                         let anio: String? = jsonArray[i]["modelo"] as? String ?? "undefined"
+                        let id:Int? = jsonArray[i]["id"] as? Int
                         
-                        let Vehicle:String = String(tipoVeh!) + "∑" + Marca! + "∑" + Linea! + "∑" + tag! + "∑" + imgurl! + "∑" + ctl_contract_type! + "∑" + clt_expiration_date! + "∑" + saldo! + "∑" + placa! + "∑" + ctl_stall_id! + "∑" + ctl_user_id! + "∑" + ctl_id! + "∑" + anio!
+                        let Vehicle:String = String(tipoVeh!) + "∑" + Marca! + "∑" + Linea! + "∑" + tag! + "∑" + imgurl! + "∑" + ctl_contract_type! + "∑" + clt_expiration_date! + "∑" + saldo! + "∑" + placa! + "∑" + ctl_stall_id! + "∑" + ctl_user_id! + "∑" + ctl_id! + "∑" + anio! + "∑" + String(id!)
                         dataReceived.append(Vehicle)
                         
 

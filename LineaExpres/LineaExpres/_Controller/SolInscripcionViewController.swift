@@ -2490,8 +2490,9 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
                         let clt_expiration_date: String? = jsonArray[i]["clt_expiration_date"] as? String ?? "undefined"
                         let saldo: String? = jsonArray[i]["saldo"] as? String ?? "undefined"
                         let placa: String? = jsonArray[i]["placa"] as? String ?? "undefined"
+                        let id: Int? = jsonArray[i]["id"] as? Int
                         
-                        let Vehicle:String = String(tipoVeh!) + "∑" + Marca! + "∑" + Linea! + "∑" + tag! + "∑" + imgurl! + "∑" + ctl_contract_type! + "∑" + clt_expiration_date! + "∑" + saldo! + "∑" + placa!
+                        let Vehicle:String = String(tipoVeh!) + "∑" + Marca! + "∑" + Linea! + "∑" + tag! + "∑" + imgurl! + "∑" + ctl_contract_type! + "∑" + clt_expiration_date! + "∑" + saldo! + "∑" + placa! + "∑" + String(id!)
                         dataReceived.append(Vehicle)
                         
                         
