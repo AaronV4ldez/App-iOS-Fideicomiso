@@ -100,7 +100,6 @@ class HamburgerViewController: UIViewController {
     }
     
     
-    
     private func setupHamburgerUI(){
         self.BackgroundHamburger.layer.cornerRadius = 20
         self.BackgroundHamburger.clipsToBounds = true
@@ -114,6 +113,7 @@ class HamburgerViewController: UIViewController {
             NotificationCenter.default.post(name: Notification.Name("LogoutFunc"), object: "")
             NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
         }
+
     }
     
     func verifyLogging() -> Bool {

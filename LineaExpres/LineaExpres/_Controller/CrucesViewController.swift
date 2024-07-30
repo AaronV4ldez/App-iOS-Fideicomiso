@@ -20,6 +20,7 @@ class CrucesViewController: UIViewController {
     var marca: String = ""
     var modelo: String = ""
     
+    
     var counter = 0
 
     
@@ -66,16 +67,24 @@ class CrucesViewController: UIViewController {
         marca = sel[4];
         modelo = sel[5];
         
-        requestCrossings(ctl_user_id: ctl_user_id, ctl_id: ctl_id) { jsonArray in
-            
+        requestCrossings(tag: tag) { jsonArray in
+        
+        //requestCrossings(ctl_user_id: ctl_user_id, ctl_id: ctl_id) { jsonArray in
+                
             if (jsonArray.count != 0) {
                 DispatchQueue.main.async {
                     for i in 0..<jsonArray.count{
                         
                         
-                        let crossing_date: String? = jsonArray[i]["crossing_date"] as? String ?? "undefined"
+                        let crossing_date: String? = jsonArray[i]["fechaHoraCruce"] as? String ?? "undefined"
+                        let previous_crossings: Int? = jsonArray[i]["numeroCarril"] as? Int ?? -0
+                        let current_crossings: Int? = jsonArray[i]["montoTarifa"] as? Int ?? -0
+                        let puenteTipo: String? = jsonArray[i]["numeroCarril"] as? String ?? "undefined"
+                        var	 puenteTipo2: String = ""
+                        
+                        /*let crossing_date: String? = jsonArray[i]["crossing_date"] as? String ?? "undefined"
                         let previous_crossings: Int? = jsonArray[i]["previous_crossings"] as? Int ?? -1
-                        let current_crossings: Int? = jsonArray[i]["current_crossings"] as? Int ?? -1
+                        let current_crossings: Int? = jsonArray[i]["current_crossings"] as? Int ?? -1*/
                         
                         let dateSplitted = crossing_date!.components(separatedBy: "T")
                         let Date = dateSplitted[0]
@@ -86,6 +95,25 @@ class CrucesViewController: UIViewController {
                         
                         print("Este valor raw \(previous_crossings)")
                         
+                        if puenteTipo!.hasPrefix("10") {
+                            puenteTipo2 = "Paso del Norte"
+                            print("valor del if 1 1 \(puenteTipo)")
+                            print("valor del if 2 1 \(puenteTipo2)")
+                        } else if puenteTipo!.hasPrefix("20") {
+                            puenteTipo2 = "Lerdo"
+                            print("valor del if 1 2 \(puenteTipo)")
+                            print("valor del if 2 2 \(puenteTipo2)")
+                        } else if puenteTipo!.hasPrefix("30") {
+                            puenteTipo2 = "Zaragoza"
+                            print("valor del if 1 3 \(puenteTipo)")
+                            print("valor del if 2 3 \(puenteTipo2)")
+                        } else if puenteTipo!.hasPrefix("40") {
+                            puenteTipo2 = "Guadalupe"
+                            print("valor del if 1 4 \(puenteTipo)")
+                            print("valor del if 2 4 \(puenteTipo2)")
+                        } else {
+                            puenteTipo2 = "Desconocido" // Valor por defecto en caso de que ningún prefijo coincida
+                        }
                         
                         let numberFormatter = NumberFormatter()
                         numberFormatter.numberStyle = .decimal
@@ -96,7 +124,7 @@ class CrucesViewController: UIViewController {
                         let aCrossing:String = String(previous_crossings!)
                         let bCrossing:String = String(current_crossings!)
                         
-                        if let prev_balance_number = Double(aCrossing) {
+                       /* if let prev_balance_number = Double(aCrossing) {
                             let formatted_prev_balance = numberFormatter.string(from: NSNumber(value: prev_balance_number)) ?? ""
                             prev_balance = formatted_prev_balance
                         }
@@ -105,8 +133,9 @@ class CrucesViewController: UIViewController {
                             after_balance = formatted_after_balance
                         }
                         
-                        print("Este valor quemado \(after_balance)")
+                        print("Este valor quemado \(after_balance)")*/
                         
+
                         
                         let CrossingContainer: UIStackView = UIStackView()
                         CrossingContainer.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -127,12 +156,14 @@ class CrucesViewController: UIViewController {
                         let titleLabel:UILabel = UILabel()
                         let beforeLabel:UILabel = UILabel()
                         let afterLabel:UILabel = UILabel()
+                        let tipoPuente:UILabel = UILabel()
                         
                         dateLabel.textColor = .black
                         hourLabel.textColor = .black
                         titleLabel.textColor = .black
                         beforeLabel.textColor = .black
                         afterLabel.textColor = .black
+                        tipoPuente.textColor = .black
                         
                         dateLabel.font = UIFont(name:"AvenirNext-Bold", size: 14.0)
                         hourLabel.font = UIFont(name:"AvenirNext-Bold", size: 14.0)
@@ -140,6 +171,7 @@ class CrucesViewController: UIViewController {
                         
                         beforeLabel.font = UIFont(name:"AvenirNext-Regular", size: 14.0)
                         afterLabel.font = UIFont(name:"AvenirNext-Regular", size: 14.0)
+                        tipoPuente.font = UIFont(name:"AvenirNext-Regular", size: 14.0)
                         
                         
                         dateLabel.text = Date
@@ -153,13 +185,18 @@ class CrucesViewController: UIViewController {
                         titleLabel.text = "\(self.marca) \(self.modelo) \(self.anio)"
                         titleLabel.textAlignment = .center
                         
-                        beforeLabel.text = "Saldo antes del cruce: $\(prev_balance)"
-                        afterLabel.text = "Saldo después del cruce: $\(after_balance)"
+                        beforeLabel.text = "Numero de Carril: \(previous_crossings!)"
+                        afterLabel.text = "Monto de Tarifa: $\(current_crossings!) MXN"
+                        tipoPuente.text = "Puente: \(puenteTipo2)"
+                        
+                        //beforeLabel.text = "Saldo antes del cruce: $\(prev_balance)"
+                        //afterLabel.text = "Saldo después del cruce: $\(after_balance)"
                         
                         CrossingContainer.addArrangedSubview(dateHourStack)
                         CrossingContainer.addArrangedSubview(titleLabel)
                         CrossingContainer.addArrangedSubview(beforeLabel)
                         CrossingContainer.addArrangedSubview(afterLabel)
+                        CrossingContainer.addArrangedSubview(tipoPuente)
                         
                         CrossingContainer.setNeedsLayout()
                         CrossingContainer.layoutIfNeeded()
@@ -222,13 +259,21 @@ class CrucesViewController: UIViewController {
     }
     
     
-    func requestCrossings(ctl_user_id: String, ctl_id: String, completion: @escaping ([[String: Any]]) -> Void) {
+    func requestCrossings(tag: String, completion: @escaping ([[String: Any]]) -> Void) {
+        
+    //func requestCrossings(ctl_user_id: String, ctl_id: String, completion: @escaping ([[String: Any]]) -> Void) {
+        
         // create post request
         let session = URLSession.shared
         var jsonArray = [[String: Any]]()
 
         //var request = URLRequest(url: URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/le/crossings/\(ctl_user_id)/\(ctl_id)")!)
-        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx//api/v1/le/crossings/\(ctl_user_id)/\(ctl_id)")!)
+        //var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx//api/v1/le/crossings/\(ctl_user_id)/\(ctl_id)")!)
+        //var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx//api/v1/le/crossingsnew/FPFC20002170")!)
+        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/le/crossingsnew/\(tag)")!)
+        
+        print("URL Completa:  \(request)")
+        
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")

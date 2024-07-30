@@ -31,7 +31,6 @@
 		2188EF93293E80970035146D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EF92293E80970035146D /* SceneDelegate.swift */; };
 		2188EF95293E80970035146D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EF94293E80970035146D /* ViewController.swift */; };
 		2188EF98293E80970035146D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF96293E80970035146D /* Main.storyboard */; };
-		2188EF9A293E80990035146D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF99293E80990035146D /* Assets.xcassets */; };
 		2188EF9D293E80990035146D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2188EF9B293E80990035146D /* LaunchScreen.storyboard */; };
 		2188EFC2293E852E0035146D /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188EFC1293E852E0035146D /* HamburgerViewController.swift */; };
 		218C7704295C620900ABD8A3 /* TramiteFixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C7703295C620900ABD8A3 /* TramiteFixViewController.swift */; };
@@ -63,6 +62,7 @@
 		21F0751029504CF200CEFAC2 /* SolInscripcionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0750F29504CF200CEFAC2 /* SolInscripcionViewController.swift */; };
 		21FD697F29A44BA5005EBE71 /* Style.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 21FD697E29A44BA5005EBE71 /* Style.yaml */; };
 		482022A31E04E569C49F4107 /* Pods_LineaExpres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */; };
+		58EB90122C4192E100E079DF /* AssetsNew.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58EB90112C4192E100E079DF /* AssetsNew.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,7 +116,6 @@
 		2188EF92293E80970035146D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2188EF94293E80970035146D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2188EF97293E80970035146D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2188EF99293E80990035146D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2188EF9C293E80990035146D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2188EF9E293E80990035146D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2188EFA3293E80990035146D /* LineaExpresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineaExpresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +150,7 @@
 		21F0750F29504CF200CEFAC2 /* SolInscripcionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolInscripcionViewController.swift; sourceTree = "<group>"; };
 		21FD697E29A44BA5005EBE71 /* Style.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = Style.yaml; sourceTree = "<group>"; };
 		456BF75A47810C27AC4B65DE /* Pods-LineaExpres.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineaExpres.debug.xcconfig"; path = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres.debug.xcconfig"; sourceTree = "<group>"; };
+		58EB90112C4192E100E079DF /* AssetsNew.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsNew.xcassets; sourceTree = "<group>"; };
 		74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineaExpres.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE71D420B620656F13D009D /* Pods-LineaExpres.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineaExpres.release.xcconfig"; path = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +202,7 @@
 		2188EF84293E80970035146D = {
 			isa = PBXGroup;
 			children = (
+				58EB90112C4192E100E079DF /* AssetsNew.xcassets */,
 				21907AA429F0EF5F0082CDD6 /* cert_p.der */,
 				21D0834A2947C840001E5D0A /* GoogleService-Info.plist */,
 				456ABC6A5D8B4ABA3481B8F5 /* Frameworks */,
@@ -233,7 +234,6 @@
 				2188EF92293E80970035146D /* SceneDelegate.swift */,
 				2188EF94293E80970035146D /* ViewController.swift */,
 				2188EF96293E80970035146D /* Main.storyboard */,
-				2188EF99293E80990035146D /* Assets.xcassets */,
 				2188EF9B293E80990035146D /* LaunchScreen.storyboard */,
 				2188EF9E293E80990035146D /* Info.plist */,
 				21C29FC5294AB16900A45DAC /* LaunchScreenViewController.swift */,
@@ -442,8 +442,8 @@
 				21907AA529F0EF5F0082CDD6 /* cert_p.der in Resources */,
 				2188EF9D293E80990035146D /* LaunchScreen.storyboard in Resources */,
 				21D0834B2947C840001E5D0A /* GoogleService-Info.plist in Resources */,
+				58EB90122C4192E100E079DF /* AssetsNew.xcassets in Resources */,
 				21FD697F29A44BA5005EBE71 /* Style.yaml in Resources */,
-				2188EF9A293E80990035146D /* Assets.xcassets in Resources */,
 				2188EF98293E80970035146D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,6 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = LineaExpres/LineaExpres.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -733,7 +734,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "Permita a Linea Exprés tomar fotografías para continuar con el proceso.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permita a Linea Exprés entrar a su galería";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -744,7 +745,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0.3;
+				MARKETING_VERSION = 6;
 				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.puentesfronterizos.lineaexpres;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -759,6 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = LineaExpres/LineaExpres.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -770,7 +772,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "Permita a Linea Exprés tomar fotografías para continuar con el proceso.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Permita a Linea Exprés entrar a su galería";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
@@ -781,7 +783,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0.3;
+				MARKETING_VERSION = 6;
 				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.puentesfronterizos.lineaexpres;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

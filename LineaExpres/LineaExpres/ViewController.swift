@@ -577,12 +577,16 @@ public class vistaVehRecargar {
             //qtue == Tipo de vehiculo; 0 = Telepeaje, 1 = Linea Expres, 2 = Acceso Digital P.
             
             if qtue.contains("0") {
-                if i == 1 {
+               /* if i == 1 {
                     tipoTramite.isHidden = true
-                }
+                }*/
                 if i == 0 {
                     tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea) "
                     tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                }
+                if i == 1{
+                    tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
+                    tipoTramite.addTarget(self, action: #selector(didBtnCruces(_ :)), for: .touchUpInside)
                 }
                 if i == 2 {
                     tipoTramite.accessibilityLabel = "\(id)"
@@ -642,16 +646,20 @@ public class vistaVehRecargar {
                 }
                 
                 if i == 2{
-                    tipoTramite.isHidden = true
+                    //tipoTramite.isHidden = true
                 }
             }
             if qtue.contains("2") {
-                if i == 1 {
+                /*if i == 1 {
                     tipoTramite.isHidden = true
-                }
+                }*/
                 if i == 0 {
                     tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
                     tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                }
+                if i == 1{
+                    tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
+                    tipoTramite.addTarget(self, action: #selector(didBtnCruces(_ :)), for: .touchUpInside)
                 }
                 
                 if i == 2{
