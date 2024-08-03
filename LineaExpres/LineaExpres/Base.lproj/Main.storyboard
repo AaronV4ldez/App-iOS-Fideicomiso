@@ -2115,7 +2115,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-Po-hpP">
-                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
+                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2972,7 +2972,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="Dtp-ky-cMf">
-                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
+                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3459,7 +3459,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="1fX-bK-mXz">
-                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
+                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3778,7 +3778,7 @@ electrónico que usted proporcione.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TelepeajeImg" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-dP-h9o">
-                                        <rect key="frame" x="19" y="127" width="346" height="110.33333333333331"/>
+                                        <rect key="frame" x="19" y="127" width="346" height="165"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe o escanea tu TAG aquí" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o07-DR-lgq">
                                         <rect key="frame" x="72" y="302" width="241" height="34"/>
@@ -3793,7 +3793,7 @@ electrónico que usted proporcione.</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktY-gI-tbZ">
-                                        <rect key="frame" x="110" y="403.66666666666663" width="164" height="35"/>
+                                        <rect key="frame" x="110" y="349" width="164" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="164" id="2gZ-zc-yb9"/>
                                         </constraints>
@@ -4984,7 +4984,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-ZC-lc3">
-                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
+                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5219,7 +5219,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.25098040700000002" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BottomNavColor"/>
                         <constraints>
                             <constraint firstItem="q7P-Va-HD1" firstAttribute="top" secondItem="RN7-TN-gnY" secondAttribute="bottom" id="8Dk-vA-vIt"/>
                             <constraint firstItem="q7P-Va-HD1" firstAttribute="leading" secondItem="sap-Ik-sXI" secondAttribute="leadingMargin" id="ZkE-mR-oJg"/>
@@ -6156,7 +6156,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="PhK-m7-STB">
-                                        <rect key="frame" x="-305" y="-64" width="1024" height="1024"/>
+                                        <rect key="frame" x="7" y="248" width="400" height="400"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6765,7 +6765,7 @@ electrónico que usted proporcione.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ADP" translatesAutoresizingMaskIntoConstraints="NO" id="bG0-RH-ykF">
-                                        <rect key="frame" x="19" y="127" width="346" height="110.33333333333331"/>
+                                        <rect key="frame" x="19" y="127" width="346" height="165"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu Número de Tarjeta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrY-VK-NfD">
                                         <rect key="frame" x="72" y="302" width="241" height="34"/>
@@ -6780,7 +6780,7 @@ electrónico que usted proporcione.</string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-8V-ePh">
-                                        <rect key="frame" x="110" y="403.66666666666663" width="164" height="35"/>
+                                        <rect key="frame" x="110" y="349" width="164" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="164" id="a47-iL-PFB"/>
                                         </constraints>
@@ -7265,17 +7265,17 @@ electrónico que usted proporcione.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="ADP" width="147" height="110.33333587646484"/>
+        <image name="ADP" width="426.66665649414062" height="286.66665649414062"/>
         <image name="CameraBtn" width="332.66665649414062" height="142"/>
         <image name="LineaExpresImg" width="104" height="67"/>
         <image name="SplashScreen" width="618" height="1305"/>
-        <image name="TelepeajeImg" width="147" height="110.33333587646484"/>
-        <image name="btnbg2" width="1640" height="664"/>
+        <image name="TelepeajeImg" width="360" height="240"/>
+        <image name="btnbg2" width="1600" height="647"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
-        <image name="fondo gradient1" width="1640" height="664"/>
+        <image name="fondo gradient1" width="1600" height="647"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="humidity" catalog="system" width="128" height="101"/>
-        <image name="image_loader" width="1024" height="1024"/>
+        <image name="image_loader" width="400" height="400"/>
         <image name="menu_icon" width="30" height="30"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
@@ -7303,19 +7303,19 @@ electrónico que usted proporcione.</string>
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

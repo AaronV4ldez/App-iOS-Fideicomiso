@@ -429,7 +429,7 @@ public class vistaVehRecargar {
         a.distribution = .fillEqually
         a.backgroundColor = .white
         a.layer.cornerRadius = 20
-        a.spacing = 5
+        a.spacing = 1
         a.layer.masksToBounds = true
         a.heightAnchor.constraint(equalToConstant: CGFloat(heig)).isActive = true
         
@@ -437,17 +437,17 @@ public class vistaVehRecargar {
         Top.axis = .vertical
         Top.distribution = .fill
         Top.layer.cornerRadius = 20
-        Top.spacing = 5
+        Top.spacing = 1
         Top.backgroundColor = .gray
         Top.layer.masksToBounds = true
-        Top.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        Top.heightAnchor.constraint(equalToConstant: 270).isActive = true
         
         
         
         Bottom = UIStackView()
         Bottom.axis = .vertical
         Bottom.distribution = .fill
-        Bottom.spacing = 5
+        Bottom.spacing = 1
         Bottom.backgroundColor = .white
         Bottom.layer.masksToBounds = true
         
@@ -499,6 +499,7 @@ public class vistaVehRecargar {
                         if saldo == 0 {
                             tipoContrato.text = "Saldo: $\(SaldoVeh)"
                         }else {
+                            //cambio020824
                             tipoContrato.text = "Saldo: $\(saldo)"
                         }
                         
@@ -510,11 +511,11 @@ public class vistaVehRecargar {
             }
         }
         
-        Titulo.font = UIFont(name:"AvenirNext-Bold", size: 18.0)
-        Placa.font = UIFont(name:"AvenirNext-Bold", size: 14.0)
-        Tag.font = UIFont(name:"merriweather-regular", size: 15.0)
-        Idtxt.font = UIFont(name:"merriweather-regular", size: 15.0)
-        tipoContrato.font = UIFont(name:"merriweather-regular", size: 15.0)
+        Titulo.font = UIFont(name:"AvenirNext-Bold", size: 15.0)
+        Placa.font = UIFont(name:"AvenirNext-Bold", size: 11.0)
+        Tag.font = UIFont(name:"merriweather-regular", size: 12.0)
+        Idtxt.font = UIFont(name:"merriweather-regular", size: 12.0)
+        tipoContrato.font = UIFont(name:"merriweather-regular", size: 12.0)
         
         
         Titulo.textColor = .black
@@ -524,7 +525,7 @@ public class vistaVehRecargar {
         tipoContrato.textColor = .black
         
         
-        Spacer.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        Spacer.heightAnchor.constraint(equalToConstant: 15).isActive = true
         
         
         Top.addArrangedSubview(imageCar)
@@ -535,7 +536,7 @@ public class vistaVehRecargar {
         BottomTop.distribution = .fillEqually
         
         BottomTop.layer.masksToBounds = true
-        BottomTop.heightAnchor.constraint(equalToConstant: 140).isActive = true
+        BottomTop.heightAnchor.constraint(equalToConstant: 270).isActive = true
         
         Spacer = UIStackView()
         BottomTop.addArrangedSubview(Spacer)
@@ -553,7 +554,7 @@ public class vistaVehRecargar {
         BottomBottom.axis = .vertical
         BottomBottom.distribution = .fill
         BottomBottom.layer.cornerRadius = 20
-        BottomBottom.spacing = 5
+        BottomBottom.spacing = 8
         BottomBottom.layer.masksToBounds = true
         
         
@@ -676,7 +677,7 @@ public class vistaVehRecargar {
             Bottom.addArrangedSubview(tipoTramite)
         }
         
-        a.layoutMargins = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        a.layoutMargins = UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15)
         a.isLayoutMarginsRelativeArrangement = true
         
         a.addArrangedSubview(Top)
@@ -774,7 +775,7 @@ public class vistaVehRecargar {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
         var res = 0
         
-        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/(tag)")!
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/tags/exists/\(tag)")!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
