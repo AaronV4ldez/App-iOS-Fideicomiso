@@ -533,7 +533,7 @@ public class vistaVehRecargar {
         
         BottomTop = UIStackView()
         BottomTop.axis = .vertical
-        BottomTop.distribution = .fillEqually
+        BottomTop.distribution = .fillProportionally
         
         BottomTop.layer.masksToBounds = true
         BottomTop.heightAnchor.constraint(equalToConstant: 270).isActive = true
@@ -554,7 +554,7 @@ public class vistaVehRecargar {
         BottomBottom.axis = .vertical
         BottomBottom.distribution = .fill
         BottomBottom.layer.cornerRadius = 20
-        BottomBottom.spacing = 8
+        BottomBottom.spacing = 5
         BottomBottom.layer.masksToBounds = true
         
         
