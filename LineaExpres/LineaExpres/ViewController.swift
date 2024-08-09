@@ -594,7 +594,6 @@ public class vistaVehRecargar {
                     tipoTramite.addTarget(self, action: #selector(didBtnEliminartag(_ :)), for: .touchUpInside)
                 }
                 
-                
             }
             if qtue.contains("1") {
                 if i == 0 {
@@ -647,14 +646,14 @@ public class vistaVehRecargar {
                 }
                 
                 if i == 2{
-                    //tipoTramite.isHidden = true
+                    tipoTramite.isHidden = true
                 }
             }
             if qtue.contains("2") {
                 /*if i == 1 {
                     tipoTramite.isHidden = true
                 }*/
-                if i == 0 {
+                if i == 0 {		
                     tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
                     tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
                 }
@@ -924,6 +923,7 @@ public class vistaVehRecargar {
          // which will be once the data task has completed
          sem.wait()
     }
+    
 }
 
 

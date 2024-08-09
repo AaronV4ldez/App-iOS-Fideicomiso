@@ -50,37 +50,37 @@ class HamburgerViewController: UIViewController {
     }
     @IBAction func LineamientosBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/1305?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/1305?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func DerechosYOblig(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/1445?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/1445?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func QuieneSomosBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/647?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/647?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func ObjetivoBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/662?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/662?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func MisionBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/724?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/724?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func VisionBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/730?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/730?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func AvisoBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/3?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/3?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func TramitesBtnClick(_ sender: Any) {
@@ -95,7 +95,7 @@ class HamburgerViewController: UIViewController {
     
     @IBAction func TarifasBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://lineaexpress.desarrollosenlanube.net/wp-json/wp/v2/pages/1119?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/1119?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     

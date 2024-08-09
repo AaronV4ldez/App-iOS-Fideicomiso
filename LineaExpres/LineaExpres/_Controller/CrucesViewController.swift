@@ -69,19 +69,19 @@ class CrucesViewController: UIViewController {
                         print("Valor de puenteTipo antes de la validación: \(puenteTipo ?? "nil")")
                         
                         if let puenteTipo = puenteTipo {
-                            if puenteTipo.hasPrefix("10") {
+                            if puenteTipo.hasPrefix("1") {
                                 puenteTipo2 = "Paso del Norte"
                                 print("valor del if 1 1 \(puenteTipo)")
                                 print("valor del if 2 1 \(puenteTipo2)")
-                            } else if puenteTipo.hasPrefix("20") {
+                            } else if puenteTipo.hasPrefix("2") {
                                 puenteTipo2 = "Lerdo"
                                 print("valor del if 1 2 \(puenteTipo)")
                                 print("valor del if 2 2 \(puenteTipo2)")
-                            } else if puenteTipo.hasPrefix("30") {
+                            } else if puenteTipo.hasPrefix("3") {
                                 puenteTipo2 = "Zaragoza"
                                 print("valor del if 1 3 \(puenteTipo)")
                                 print("valor del if 2 3 \(puenteTipo2)")
-                            } else if puenteTipo.hasPrefix("40") {
+                            } else if puenteTipo.hasPrefix("4") {
                                 puenteTipo2 = "Guadalupe"
                                 print("valor del if 1 4 \(puenteTipo)")
                                 print("valor del if 2 4 \(puenteTipo2)")

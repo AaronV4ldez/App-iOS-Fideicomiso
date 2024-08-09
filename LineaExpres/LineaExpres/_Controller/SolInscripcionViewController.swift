@@ -2094,7 +2094,7 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
                 print(responseJSON)
                 let message: String? = responseJSON["message"] as? String
                 
-                if ((message?.contains("registrado")) != nil) {
+                if let message = message, !message.contains("registrado"){
                     if let tramiteID:Int = (responseJSON["ID"] as? Int) {
                         let id_tramite:String = String(tramiteID) as String
                         
