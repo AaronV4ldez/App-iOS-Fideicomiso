@@ -99,6 +99,10 @@ class HamburgerViewController: UIViewController {
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     
+    @IBAction func versionBtnClick(_ sender: Any){
+        NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HomeViewController")
+        NotificationCenter.default.post(name: Notification.Name("closeMeny"), object: "0")
+    }
     
     private func setupHamburgerUI(){
         self.BackgroundHamburger.layer.cornerRadius = 20

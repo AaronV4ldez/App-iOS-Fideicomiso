@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="sW8-Nr-F64">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="sW8-Nr-F64">
     <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -2760,7 +2760,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="0.0" y="686" width="384" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-cJ-1Rr">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="avv-oJ-AMQ"/>
                                                 </constraints>
@@ -2775,7 +2775,7 @@ electrónico que usted proporcione.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-mT-Iiq">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                                <rect key="frame" x="0.0" y="40" width="384" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xuG-tH-Ylh"/>
                                                 </constraints>
@@ -3003,10 +3003,10 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ijo-xt-WPL">
-                                                <rect key="frame" x="0.0" y="205" width="354" height="90"/>
+                                                <rect key="frame" x="0.0" y="205" width="354" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis vehículos de Telepeaje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSc-yk-gov">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="BlackGlobal"/>
                                                         <nil key="highlightedColor"/>
@@ -3018,10 +3018,10 @@ electrónico que usted proporcione.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HHs-90-R22">
-                                                <rect key="frame" x="0.0" y="300" width="354" height="200"/>
+                                                <rect key="frame" x="0.0" y="410" width="354" height="90"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceso Digital Peatonal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8g-3D-qk5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                         <color key="textColor" name="BlackGlobal"/>
                                                         <nil key="highlightedColor"/>
@@ -4815,24 +4815,24 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-jQ-QbZ">
-                                        <rect key="frame" x="0.0" y="410" width="332" height="177"/>
+                                        <rect key="frame" x="0.0" y="410" width="332" height="200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SkQ-xW-dKP">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-02-3jw">
-                                                        <rect key="frame" x="0.0" y="78.666666666666629" width="166" height="20"/>
+                                                        <rect key="frame" x="0.0" y="90" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-nh-IDd">
-                                                        <rect key="frame" x="166" y="0.0" width="166" height="177"/>
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hj-Lc-fST">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -4854,24 +4854,24 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqB-Nt-7k0">
-                                        <rect key="frame" x="0.0" y="592" width="332" height="200"/>
+                                        <rect key="frame" x="0.0" y="615" width="332" height="177"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-vb-MGk">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQU-Mj-eqz">
-                                                        <rect key="frame" x="0.0" y="90" width="166" height="20"/>
+                                                        <rect key="frame" x="0.0" y="78.666666666666629" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="60X-YM-aJw">
-                                                        <rect key="frame" x="166" y="0.0" width="166" height="200"/>
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="177"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-Td-xh9">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -5266,7 +5266,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="323" height="802"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bez-1I-Jnv">
-                                        <rect key="frame" x="0.0" y="0.0" width="323" height="587.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="624.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmH-HG-Rtq">
                                                 <rect key="frame" x="0.0" y="0.0" width="323" height="37.333333333333336"/>
@@ -5443,6 +5443,18 @@ electrónico que usted proporcione.</string>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="CloseSession:" destination="jt5-8U-d3B" eventType="touchUpInside" id="7E5-4e-fN6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYN-fj-gCn">
+                                                <rect key="frame" x="0.0" y="592.66666666666663" width="323" height="32"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Version 4.5" titleAlignment="leading">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ObjetivoBtnClick:" destination="jt5-8U-d3B" eventType="touchUpInside" id="22e-H6-SJT"/>
+                                                    <action selector="versionBtnClick:" destination="jt5-8U-d3B" eventType="touchUpInside" id="nBL-kz-pGQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -7303,19 +7315,19 @@ electrónico que usted proporcione.</string>
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
-            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
-            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
