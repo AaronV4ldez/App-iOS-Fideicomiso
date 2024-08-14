@@ -60,7 +60,7 @@ class HamburgerViewController: UIViewController {
     }
     @IBAction func QuieneSomosBtnClick(_ sender: Any) {
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HamburgerTabsViewController")
-        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/647?_embed")
+        NotificationCenter.default.post(name: Notification.Name("TipoServicio"), object: "https://noticias.fpfch.gob.mx/wp-json/wp/v2/pages/1710?_embed")
         NotificationCenter.default.post(name: Notification.Name("closeMenu"), object: "0")
     }
     @IBAction func ObjetivoBtnClick(_ sender: Any) {

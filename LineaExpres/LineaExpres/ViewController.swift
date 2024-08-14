@@ -397,6 +397,7 @@ class successfullyViewController: UIViewController {
 
 public class vistaVehRecargar {
     var tipoLinea: Int = 0
+    var loginToken: String = ""
     public func generarVistaVehiculos(conDatos data: [String]) -> UIStackView {
         
         let heig:Int = Int(data[0])!
@@ -414,8 +415,10 @@ public class vistaVehRecargar {
         let ctl_id:String = data[12]
         let anio:String = data[13]
         let id:String = data[14]
-        let loginToken:String = data[15]
+        loginToken = (data[15])
         tipoLinea = Int(data[16])!
+        
+        
         
         
         var Top:UIStackView = UIStackView()
@@ -578,13 +581,24 @@ public class vistaVehRecargar {
             //qtue == Tipo de vehiculo; 0 = Telepeaje, 1 = Linea Expres, 2 = Acceso Digital P.
             
             if qtue.contains("0") {
-               /* if i == 1 {
-                    tipoTramite.isHidden = true
-                }*/
+                /* if i == 1 {
+                 tipoTramite.isHidden = true
+                 }*/
+                /*if i == 0 {
+                 tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea) "
+                 tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                 }*/
+
                 if i == 0 {
-                    tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea) "
-                    tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
-                }
+                    tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
+                    checkTagState(for: TagVeh) { canProceed in
+                        if canProceed {
+                            tipoTramite.addTarget(self, action: #selector(self.didBtnRecharge(_:)), for: .touchUpInside)
+                        } else {
+                            print("El estado del TAG no permite continuar.")
+                        }
+                    }
+                }                
                 if i == 1{
                     tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
                     tipoTramite.addTarget(self, action: #selector(didBtnCruces(_ :)), for: .touchUpInside)
@@ -647,16 +661,26 @@ public class vistaVehRecargar {
                 }
                 
                 if i == 2{
-                    //tipoTramite.isHidden = true
+                    tipoTramite.isHidden = true
                 }
             }
             if qtue.contains("2") {
                 /*if i == 1 {
-                    tipoTramite.isHidden = true
-                }*/
+                 tipoTramite.isHidden = true
+                 }*/
+                /*if i == 0 {
+                 tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
+                 tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                 }*/
                 if i == 0 {
                     tipoTramite.accessibilityLabel = "\(TagVeh), '0', '0', \(tipoLinea)"
-                    tipoTramite.addTarget(self, action: #selector(didBtnRecharge(_ :)), for: .touchUpInside)
+                    checkTagState(for: TagVeh) { canProceed in
+                        if canProceed {
+                            tipoTramite.addTarget(self, action: #selector(self.didBtnRecharge(_:)), for: .touchUpInside)
+                        } else {
+                            print("El estado del TAG no permite continuar.")
+                        }
+                    }
                 }
                 if i == 1{
                     tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
@@ -704,6 +728,7 @@ public class vistaVehRecargar {
     @objc func didBtnEliminartag(_ sender: UIButton){
         
         let id = sender.accessibilityLabel ?? ""
+        let loginToken = sender.accessibilityLabel ?? ""
         print("Botón eliminar y el id seleccionado es: \(id)")
         
         let label = UILabel()
@@ -834,19 +859,19 @@ public class vistaVehRecargar {
     }
     
     @objc func acceptButtonTapped(_ sender: UIButton) {
-
+        
         print("Aceptar")
         
         // Desempaquetar opcionalmente sender.accessibilityLabel
-         let id = sender.accessibilityLabel ?? ""
-            print("Error: No se pudo obtener el ID.")
-  
+        let id = sender.accessibilityLabel ?? ""
+        print("Error: No se pudo obtener el ID.")
+        
         
         // Imprime el ID desempaquetado
         print("Aceptar con ID: \(id)")
         
         // Llama a la función postDeleteTag con el ID desempaquetado
-        postDeleteTag(id: id)
+        postDeleteTag(id: id, loginToken: loginToken)
         if let presentingViewController = UIApplication.shared.windows.first?.rootViewController {
             // Cierra el modal
             presentingViewController.dismiss(animated: true, completion: nil)
@@ -870,60 +895,105 @@ public class vistaVehRecargar {
     }//cancel button
     
     var LoginToken:String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2OSwibmFtZSI6IkFhclx1MDBmM24gVmFsZGV6IEdhcmNpYSIsImV4cCI6MTcwNDMwNjI4Mn0.0fgYcdqr0cVl3MChdQIrkk1P3jw37hTp61EqYB2n2NQ"
+    
+    func postDeleteTag(id: String, loginToken:String){
         
-    func postDeleteTag(id: String){
-        
-        print("el id mandado a la api es \(id)")
+        print("el id mandado a la api es \(id) y el token es \(loginToken)")
         let session = URLSession.shared
-         let sem = DispatchSemaphore.init(value: 0)
-         var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles/\(id)")!)
-         request.httpMethod = "DELETE"
-         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-         request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
-
-           let task = session.dataTask(with: request) { data, response, error in
-               defer { sem.signal() }
-
-               if let error = error {
-                   print("Error -> \(error)")
-                   return
-               }
-
-               if let data = data, let string = String(data: data, encoding: .utf8) {
-                   
-                   if let data = string.data(using: .utf8) {
-                       let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
-                       if let responseJSON = responseJSON as? [String: Any] {
-                           print(responseJSON)
-                           
-                           let message:String? = responseJSON["message"] as? String
-                           if message != nil {
-                               if (message!.contains("Vehículo eliminado") || message!.contains("La petición la realizó un usuario no válido.")) {
-                                   DispatchQueue.main.async {
-                                       NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "ProfileViewController")
-                                   }
-                                   
-                               }
-                               DispatchQueue.main.async {
-                                   //self.showAlert(title: "Línea Exprés", message: message!)
-                               }
-
-                               
-                           }
-                       } else {
-                           print("Error: Could not convert JSON string to")
-                       }
-                   }
-                   
-               }
-           }
-
-         task.resume()
-
-         // This line will wait until the semaphore has been signaled
-         // which will be once the data task has completed
-         sem.wait()
+        let sem = DispatchSemaphore.init(value: 0)
+        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/vehicles/\(id)")!)
+        print("este es la direccion a la api: \(request)")
+        request.httpMethod = "DELETE"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(loginToken)", forHTTPHeaderField: "Authorization")
+        
+        let task = session.dataTask(with: request) { data, response, error in
+            defer { sem.signal() }
+            
+            if let error = error {
+                print("Error -> \(error)")
+                return
+            }
+            
+            if let data = data, let string = String(data: data, encoding: .utf8) {
+                
+                if let data = string.data(using: .utf8) {
+                    let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                    if let responseJSON = responseJSON as? [String: Any] {
+                        print(responseJSON)
+                        
+                        let message:String? = responseJSON["message"] as? String
+                        if message != nil {
+                            if (message!.contains("Vehículo eliminado") || message!.contains("La petición la realizó un usuario no válido.")) {
+                                DispatchQueue.main.async {
+                                    NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "ProfileViewController")
+                                }
+                                
+                            }
+                            DispatchQueue.main.async {
+                                //self.showAlert(title: "Línea Exprés", message: message!)
+                            }
+                            
+                            
+                        }
+                    } else {
+                        print("Error: Could not convert JSON string to")
+                    }
+                }
+                
+            }
+        }
+        
+        task.resume()
+        
+        // This line will wait until the semaphore has been signaled
+        // which will be once the data task has completed
+        sem.wait()
     }
+    
+    func checkTagState(for tagVeh: String, completion: @escaping (Bool) -> Void) {
+        let urlString = "https://apis.fpfch.gob.mx/api/v1/tags/lockstate/\(tagVeh)"
+        guard let url = URL(string: urlString) else {
+            print("URL inválida")
+            completion(false)
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2OSwibmFtZSI6IkFhclx1MDBmM24gVmFsZGV6IEdhcmNpYSIsImV4cCI6MTcwNDkwMTM1N30.ORsWQWxVBCjlhItaZ1e63qBIqEL1LFOjKuydoEaDBZg", forHTTPHeaderField: "Authorization")
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error en la solicitud: \(error.localizedDescription)")
+                completion(false)
+                return
+            }
+
+            guard let data = data else {
+                print("Datos inválidos")
+                completion(false)
+                return
+            }
+
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                    if let code = json["code"] as? Int {
+                        completion(code == 0)
+                    } else {
+                        print("Respuesta inesperada")
+                        completion(false)
+                    }
+                }
+            } catch {
+                print("Error al parsear la respuesta: \(error.localizedDescription)")
+                completion(false)
+            }
+        }
+
+        task.resume()
+    }
+
 }
 
 

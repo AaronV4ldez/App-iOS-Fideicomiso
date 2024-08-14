@@ -281,7 +281,7 @@
 				21D7F6C02991223000BA2299 /* VehiculosViewController.swift */,
 			);
 			name = "\U0010Controller";
-			path = /Users/cashamerica04/Documents/workspace/projects/PuentesFronterizos/LineaExpres/LineaExpres/_Controller;
+			path = "/Users/imacmi/Documents/GitHub/App-iOS-Fideicomiso/LineaExpres/LineaExpres/_Controller";
 			sourceTree = "<absolute>";
 		};
 		21D0834C2947E58E001E5D0A /* fonts */ = {
@@ -745,7 +745,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.1;
+				MARKETING_VERSION = 7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.puentesfronterizos.lineaexpres;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -783,7 +783,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.1;
+				MARKETING_VERSION = 7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = mx.gob.puentesfronterizos.lineaexpres;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

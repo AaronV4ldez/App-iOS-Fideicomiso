@@ -146,9 +146,9 @@ class BanortePaymentViewController: UIViewController, WKNavigationDelegate {
         let sixtyScript = "setTimeout(function(){document.getElementById('pagar').style.marginBottom = '15px'; }, \(waitSec));"
         let seventyScript = "setTimeout(function(){document.getElementById('pagar').style.width = '100%'; }, \(waitSec));"
         let disableButtonScript = """
-            document.getElementById('pagar').disabled = true;
+            document.getElementById('pagar').disabled = false;
             setTimeout(function() {
-                document.getElementById('pagar').disabled = false;
+                document.getElementById('pagar').disabled = true;
             }, 900000); // 900000 ms = 15 minutos
         """
         let Script = "setTimeout(function(){document.getElementById('NUMERO_TARJETA').type = 'number'; document.getElementById('NUMERO_TARJETA').type = 'number'; document.getElementById('CVC').type = 'number'; " +

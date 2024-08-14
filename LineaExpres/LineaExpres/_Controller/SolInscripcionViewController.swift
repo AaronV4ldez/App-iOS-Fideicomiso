@@ -1374,7 +1374,7 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
                 
             }
         case 2:
-            TipoDeConvenio.text = "Mixta (Zaragoza - Lerdo)"
+            TipoDeConvenio.text = "COMPLETA (PDN, LER, ZAR)"
             if pais.contains("Mexico") {
                 Cantidad = anual_mixto_mx
                 conv_saldo = "0"
@@ -2171,6 +2171,7 @@ class SolInscripcionViewController: UIViewController, UIImagePickerControllerDel
             }
         }
         task.resume()
+        NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "ProfileViewController")
     }
     
     func sendImages(id:String, token:String, FileNumber:String, FileName:String, Imagen: Data?) {
