@@ -486,7 +486,7 @@ public class vistaVehRecargar {
         Tag.text = "Tag: \(TagVeh)"
         
         let Idtxt:UILabel = UILabel()
-        Idtxt.text = "Tag: \(id)"
+        
         
         let tipoContrato:UILabel = UILabel()
         
@@ -511,6 +511,19 @@ public class vistaVehRecargar {
                     // Procesar el error
                     print("Error: \(error.localizedDescription)")
                 }
+            }
+        }
+        
+        //cambio 15 08 24 agregado de anualidad completo etc
+        
+        if qtue.contains("1"){
+            if ctl_contract_type == ("V"){
+                Idtxt.text = "Anualidad"
+                
+            }else if ctl_contract_type == ("M"){
+                Idtxt.text = "Todos los Puentes"
+            }else if ctl_contract_type == ("C"){
+                Idtxt.isHidden
             }
         }
         
@@ -550,6 +563,7 @@ public class vistaVehRecargar {
         BottomTop.addArrangedSubview(Tag)
         Spacer = UIStackView()
         BottomTop.addArrangedSubview(Spacer)
+        BottomTop.addArrangedSubview(Idtxt)
         BottomTop.addArrangedSubview(tipoContrato)
         
         
@@ -655,7 +669,8 @@ public class vistaVehRecargar {
                     
                     
                     
-                }else {
+                }
+                if i == 1 {
                     tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
                     tipoTramite.addTarget(self, action: #selector(didBtnCruces(_ :)), for: .touchUpInside)
                 }

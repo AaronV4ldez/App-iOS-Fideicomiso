@@ -215,7 +215,7 @@ class CrearCitaViewController: UIViewController {
         return dataReceived
     }
     
-    func getCitaDate() {
+    /*func getCitaDate() {
         
         // create post request
         //let url = URL(string: "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments")!
@@ -282,9 +282,76 @@ class CrearCitaViewController: UIViewController {
         }
         task.resume()
         
+    }*/
+    
+    func getCitaDate() {
+        // create post request
+        let url = URL(string: "https://apis.fpfch.gob.mx/api/v1/appointments")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("text", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("HTTP request failed")
+                return
+            }
+            
+            guard let data = data, let string = String(data: data, encoding: .utf8),
+                  let jsonData = string.data(using: .utf8) else {
+                print("Error: Could not convert response to JSON")
+                return
+            }
+            
+            do {
+                if let jsonArray = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [[String: Any]], !jsonArray.isEmpty {
+                    for i in 0..<jsonArray.count {
+                        guard let idCita = jsonArray[i]["id"] as? String,
+                              let dateCita = jsonArray[i]["dt"] as? String else {
+                            print("Invalid data for cita")
+                            continue
+                        }
+                        
+                        if idCita == self.IdProcType {
+                            print("Existe")
+                            
+                            let dateFormatter = DateFormatter()
+                            dateFormatter.locale = Locale(identifier: "es_ES")
+                            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                            
+                            if let fecha = dateFormatter.date(from: dateCita) {
+                                let dateFormatter2 = DateFormatter()
+                                dateFormatter2.locale = Locale(identifier: "es_ES")
+                                dateFormatter2.dateFormat = "HH:mm dd 'de' MMMM 'de' yyyy"
+                                
+                                let fechaFormateada = dateFormatter2.string(from: fecha)
+                                
+                                DispatchQueue.main.async {
+                                    self.CitaShowDate.text = fechaFormateada
+                                }
+                            }
+                            return
+                        }
+                    }
+                } else {
+                    print("No citas available")
+                }
+            } catch {
+                print("JSON parsing error: \(error)")
+            }
+        }
+        task.resume()
     }
     
-    func setDate() {
+   /* func setDate() {
         var endpointUrl: String = ""
         if MethodCita.contains("ChangeDate"){
             //endpointUrl = "https://lineaexpressapp.desarrollosenlanube.net/api/v1/appointments/change"
@@ -340,7 +407,77 @@ class CrearCitaViewController: UIViewController {
         }
         
         task.resume()
+    }*/
+    func setDate() {
+        guard !MethodCita.isEmpty else {
+            print("MethodCita está vacío.")
+            return
+        }
+
+        let endpointUrl: String
+        if MethodCita.contains("ChangeDate") {
+            endpointUrl = "https://apis.fpfch.gob.mx/api/v1/appointments/change"
+        } else if MethodCita.contains("CreateDate") {
+            endpointUrl = "https://apis.fpfch.gob.mx/api/v1/appointments/create"
+        } else {
+            print("Método no reconocido en MethodCita.")
+            return
+        }
+        
+        guard let date = DatePicker.text, !date.isEmpty else {
+            print("DatePicker.text está vacío.")
+            return
+        }
+        
+        guard let fulltime = Hours.currentTitle, !fulltime.isEmpty else {
+            print("Hours.currentTitle está vacío.")
+            return
+        }
+        
+        let timeSeparate = fulltime.components(separatedBy: " ")
+        guard timeSeparate.count > 1 else {
+            print("El formato de fulltime no es correcto.")
+            return
+        }
+        
+        let hour = timeSeparate[1]
+        print("Esta es lo de la hora \(date)")
+
+        let json: [String: Any] = ["date": date, "time": hour, "id_proc": IdProcType, "id_proc_type": idProc]
+
+        guard let jsonData = try? JSONSerialization.data(withJSONObject: json) else {
+            print("No se pudo crear el JSON.")
+            return
+        }
+        
+        guard let url = URL(string: endpointUrl) else {
+            print("URL no válida.")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = jsonData
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(LoginToken)", forHTTPHeaderField: "Authorization")
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print(error?.localizedDescription ?? "No data")
+                return
+            }
+            if let responseJSON = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+               let message = responseJSON["message"] as? String,
+               !message.contains("Cita creada") || !message.contains("Cita cambiada") {
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: Notification.Name("viewChanger"), object: "HomeViewController")
+                }
+            }
+        }
+        
+        task.resume()
     }
+
     
     func verifyLogging() -> Bool {
         
