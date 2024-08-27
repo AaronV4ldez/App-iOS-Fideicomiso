@@ -63,6 +63,7 @@
 		21FD697F29A44BA5005EBE71 /* Style.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 21FD697E29A44BA5005EBE71 /* Style.yaml */; };
 		482022A31E04E569C49F4107 /* Pods_LineaExpres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */; };
 		58EB90122C4192E100E079DF /* AssetsNew.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58EB90112C4192E100E079DF /* AssetsNew.xcassets */; };
+		FC3949AF2C7D1EDE008CED70 /* CrucesViewLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3949AE2C7D1EDE008CED70 /* CrucesViewLEController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		58EB90112C4192E100E079DF /* AssetsNew.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsNew.xcassets; sourceTree = "<group>"; };
 		74B72019B07B29F20D6CC019 /* Pods_LineaExpres.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineaExpres.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE71D420B620656F13D009D /* Pods-LineaExpres.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineaExpres.release.xcconfig"; path = "Target Support Files/Pods-LineaExpres/Pods-LineaExpres.release.xcconfig"; sourceTree = "<group>"; };
+		FC3949AE2C7D1EDE008CED70 /* CrucesViewLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrucesViewLEController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,9 +281,10 @@
 				21F0750D29503EBD00CEFAC2 /* TramitesViewController.swift */,
 				213D841129541550008F046C /* VehicleViewController.swift */,
 				21D7F6C02991223000BA2299 /* VehiculosViewController.swift */,
+				FC3949AE2C7D1EDE008CED70 /* CrucesViewLEController.swift */,
 			);
 			name = "\U0010Controller";
-			path = "/Users/imacmi/Documents/GitHub/App-iOS-Fideicomiso/LineaExpres/LineaExpres/_Controller";
+			path = "/Users/cashamerica04/Documents/GitHub/App-iOS-Fideicomiso/LineaExpres/LineaExpres/_Controller";
 			sourceTree = "<absolute>";
 		};
 		21D0834C2947E58E001E5D0A /* fonts */ = {
@@ -531,6 +534,7 @@
 				2197C3F029AEF8040087A9A6 /* CrucesViewController.swift in Sources */,
 				2109C0192953323E0072CC2B /* ChangeEmailViewController.swift in Sources */,
 				21E01E39297759EE00B58495 /* BanortePaymentViewController.swift in Sources */,
+				FC3949AF2C7D1EDE008CED70 /* CrucesViewLEController.swift in Sources */,
 				21F0751029504CF200CEFAC2 /* SolInscripcionViewController.swift in Sources */,
 				2188EFC2293E852E0035146D /* HamburgerViewController.swift in Sources */,
 				2109C0152952DCE80072CC2B /* PaymentViewController.swift in Sources */,

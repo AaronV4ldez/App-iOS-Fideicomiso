@@ -2760,7 +2760,7 @@ electrónico que usted proporcione.</string>
                                         <rect key="frame" x="0.0" y="686" width="384" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-cJ-1Rr">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="avv-oJ-AMQ"/>
                                                 </constraints>
@@ -2775,7 +2775,7 @@ electrónico que usted proporcione.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecq-mT-Iiq">
-                                                <rect key="frame" x="0.0" y="40" width="384" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xuG-tH-Ylh"/>
                                                 </constraints>
@@ -2864,7 +2864,7 @@ electrónico que usted proporcione.</string>
                                 <rect key="frame" x="15" y="134" width="384" height="638"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambiar correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-iF-3ni">
-                                        <rect key="frame" x="124.66666666666667" y="147" width="134.66666666666663" height="18"/>
+                                        <rect key="frame" x="124.66666666666667" y="147" width="134.66666666666657" height="18"/>
                                         <fontDescription key="fontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="18"/>
                                         <color key="textColor" name="BlackGlobal"/>
                                         <nil key="highlightedColor"/>
@@ -4815,24 +4815,24 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-jQ-QbZ">
-                                        <rect key="frame" x="0.0" y="410" width="332" height="200"/>
+                                        <rect key="frame" x="0.0" y="410" width="332" height="177"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SkQ-xW-dKP">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-02-3jw">
-                                                        <rect key="frame" x="0.0" y="90" width="166" height="20"/>
+                                                        <rect key="frame" x="0.0" y="78.666666666666629" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-nh-IDd">
-                                                        <rect key="frame" x="166" y="0.0" width="166" height="200"/>
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="177"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hj-Lc-fST">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -4854,24 +4854,24 @@ electrónico que usted proporcione.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqB-Nt-7k0">
-                                        <rect key="frame" x="0.0" y="615" width="332" height="177"/>
+                                        <rect key="frame" x="0.0" y="592" width="332" height="200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i5N-vb-MGk">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQU-Mj-eqz">
-                                                        <rect key="frame" x="0.0" y="78.666666666666629" width="166" height="20"/>
+                                                        <rect key="frame" x="0.0" y="90" width="166" height="20"/>
                                                         <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="17"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_loader" translatesAutoresizingMaskIntoConstraints="NO" id="60X-YM-aJw">
-                                                        <rect key="frame" x="166" y="0.0" width="166" height="177"/>
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-Td-xh9">
-                                                <rect key="frame" x="0.0" y="0.0" width="332" height="177"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
@@ -7274,6 +7274,70 @@ electrónico que usted proporcione.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NsE-ke-AWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1061" y="1884"/>
+        </scene>
+        <!--Cruces ViewLE Controller-->
+        <scene sceneID="TAz-GZ-uJ4">
+            <objects>
+                <viewController storyboardIdentifier="CrucesViewLEController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uTj-yl-ZrW" customClass="CrucesViewLEController" customModule="LineaExpres" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hlF-E4-T9T"/>
+                        <viewControllerLayoutGuide type="bottom" id="1MY-0V-tCL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bFv-R9-eVP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WnI-Pr-zUF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista de cruces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-sc-bXi">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                        <color key="backgroundColor" name="PlecaColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="FUR-L2-XaU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-el-dXs">
+                                        <rect key="frame" x="0.0" y="45" width="414" height="851"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fy2-id-coi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="868"/>
+                                                <color key="backgroundColor" name="BackgroundColor"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Fy2-id-coi" firstAttribute="top" secondItem="fgM-5f-p6b" secondAttribute="top" id="Qtm-m4-Acq"/>
+                                            <constraint firstItem="Fy2-id-coi" firstAttribute="leading" secondItem="fgM-5f-p6b" secondAttribute="leading" id="TZu-pg-YRW"/>
+                                            <constraint firstItem="Fy2-id-coi" firstAttribute="bottom" secondItem="fgM-5f-p6b" secondAttribute="bottom" id="gw8-ne-4y2"/>
+                                            <constraint firstItem="Fy2-id-coi" firstAttribute="width" secondItem="a5w-dy-oAQ" secondAttribute="width" id="iKS-Wv-uWs"/>
+                                            <constraint firstItem="Fy2-id-coi" firstAttribute="trailing" secondItem="fgM-5f-p6b" secondAttribute="trailing" id="vrj-zA-c9B"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="fgM-5f-p6b"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="a5w-dy-oAQ"/>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WnI-Pr-zUF" secondAttribute="trailing" id="8vK-6B-e9i"/>
+                            <constraint firstItem="WnI-Pr-zUF" firstAttribute="leading" secondItem="bFv-R9-eVP" secondAttribute="leading" id="FMG-uV-Ruf"/>
+                            <constraint firstAttribute="bottom" secondItem="WnI-Pr-zUF" secondAttribute="bottom" id="Ty6-e5-6LB"/>
+                            <constraint firstItem="WnI-Pr-zUF" firstAttribute="top" secondItem="bFv-R9-eVP" secondAttribute="top" id="nyE-ck-T1B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StackContainer" destination="Fy2-id-coi" id="SQ4-O2-Mae"/>
+                        <outlet property="mainStackView" destination="WnI-Pr-zUF" id="01s-Dx-OTt"/>
+                        <outlet property="titleLabel" destination="dRH-sc-bXi" id="sNf-Mz-rMz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRR-z2-UEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3066.666666666667" y="-1696.2053571428571"/>
         </scene>
     </scenes>
     <resources>

@@ -672,7 +672,7 @@ public class vistaVehRecargar {
                 }
                 if i == 1 {
                     tipoTramite.accessibilityLabel = "\(TagVeh),\(ctl_user_id),\(ctl_id),\(anio),\(MarcaVeh),\(Linea)"
-                    tipoTramite.addTarget(self, action: #selector(didBtnCruces(_ :)), for: .touchUpInside)
+                    tipoTramite.addTarget(self, action: #selector(didBtnCrucesLE(_ :)), for: .touchUpInside)
                 }
                 
                 if i == 2{
@@ -735,6 +735,12 @@ public class vistaVehRecargar {
     @objc func didBtnCruces(_ sender: UIButton) {
         let tag:String? = sender.accessibilityLabel
         NotificationCenter.default.post(name: Notification.Name("viewChanger"), object:"CrucesViewController")
+        NotificationCenter.default.post(name: Notification.Name("CrucesInfo"), object:tag!)
+        print("Hola soy el boton ekisde")
+    }
+    @objc func didBtnCrucesLE(_ sender: UIButton) {
+        let tag:String? = sender.accessibilityLabel
+        NotificationCenter.default.post(name: Notification.Name("viewChanger"), object:"CrucesViewLEController")
         NotificationCenter.default.post(name: Notification.Name("CrucesInfo"), object:tag!)
         print("Hola soy el boton ekisde")
     }

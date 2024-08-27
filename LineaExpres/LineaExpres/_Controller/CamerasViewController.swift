@@ -63,7 +63,7 @@ class CamerasViewController: UIViewController {
         self.webviewGeneral.configuration.allowsInlineMediaPlayback = false
         
         
-        let myURL = URL(string: "https://puentes.desarrollosenlanube.net/")
+        let myURL = URL(string: "https://panelweb.fpfch.gob.mx/puentes/")
         let youtubeRequest = URLRequest(url: myURL!)
         self.webviewGeneral.load(youtubeRequest)
         
