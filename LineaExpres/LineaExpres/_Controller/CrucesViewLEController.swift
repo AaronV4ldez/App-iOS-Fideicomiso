@@ -228,8 +228,8 @@ class CrucesViewLEController: UIViewController {
         let session = URLSession.shared
         var jsonArray = [[String: Any]]()
 
-        var request = URLRequest(url: URL(string: //"https://apis.fpfch.gob.mx/api/v1/le/crossings/\(ctl_user_id)/\(ctl_id)")!)
-            "https://apis.fpfch.gob.mx/api/v1/le/crossings/105-20421/105-24959")!)
+        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/le/crossings/\(ctl_user_id)/\(ctl_id)")!)
+            //"https://apis.fpfch.gob.mx/api/v1/le/crossings/105-20421/105-24959")!)
         print("URL Completa:  \(request)")
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")

@@ -317,7 +317,7 @@ class bottomBarViewController: UIViewController {
         UIApplication.shared.open(number)
     }
     
-    @IBAction func TramitesBtnClick(_ sender: Any) {
+   @IBAction func TramitesBtnClick(_ sender: Any) {
         //if actualPage == "TramitesViewController" {
         //    return
         //}else {
