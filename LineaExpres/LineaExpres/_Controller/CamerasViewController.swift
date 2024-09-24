@@ -1,37 +1,22 @@
-//
-//  CamerasViewController.swift
-//  LineaExpres
-//
-//
-
 import UIKit
 import WebKit
 
-class CamerasViewController: UIViewController {
+class CamerasViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var ZaragozaWebView: WKWebView!
-    @IBOutlet weak var ZaragozaSurWebView: WKWebView!
-    @IBOutlet weak var PasoDelNorteNorteWebView: WKWebView!
-    @IBOutlet weak var PasoDelNorteSurWebView: WKWebView!
-    @IBOutlet weak var LerdoNorteWebView: WKWebView!
-    @IBOutlet weak var LerdoSurWebView: WKWebView!
-    @IBOutlet weak var LerdoFilaWebView: WKWebView!
-    
     @IBOutlet weak var webviewGeneral: WKWebView!
-    
-    var mbPuenteLive1: String = ""
-    var mbPuenteLive2: String = ""
-    var mbPuenteLive3: String = ""
-    var mbPuenteLive4: String = ""
-    var mbPuenteLive5: String = ""
-    var mbPuenteLive6: String = ""
-    var mbPuenteLive7: String = ""
     
     @IBOutlet weak var StackViewContainer: UIStackView!
     @IBOutlet weak var Container: UIStackView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Establecer el delegado de navegación para controlar la carga de los videos
+        webviewGeneral.navigationDelegate = self
+
+        // Configurar la WKWebView para permitir la reproducción en línea
+        configureWebView(webView: webviewGeneral)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -46,13 +31,7 @@ class CamerasViewController: UIViewController {
         Container.layer.cornerRadius = 20
         Container.layer.masksToBounds = true
 
-        // Configurar la WKWebView para permitir la reproducción en línea
-        self.webviewGeneral.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
-        self.webviewGeneral.configuration.allowsInlineMediaPlayback = true
-        self.webviewGeneral.configuration.mediaTypesRequiringUserActionForPlayback = []
-
-        // HTML con título y video embebido
-        let title = "Live Camera: Zaragoza"
+        // HTML con el contenido de los videos embebidos en pausa
         let htmlString = """
         <!DOCTYPE html>
         <html lang="en">
@@ -90,103 +69,89 @@ class CamerasViewController: UIViewController {
                     margin-bottom: 20px;
                 }
             </style>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Pausar los videos en iframes al cargarse
+                    var iframes = document.querySelectorAll('iframe');
+                    iframes.forEach(function(iframe) {
+                        var iframeDoc = iframe.contentWindow || iframe.contentDocument;
+                        if (iframeDoc) {
+                            iframe.src += "?autoplay=0";  // Asegurarse de que no se reproduzcan automáticamente
+                        }
+                    });
+                });
+            </script>
         </head>
         <body>
             <div class="container">
                 <div class="camera-section">
                     <h1>Paso del Norte (Norte)</h1>
-                    <iframe src="https://camstreamer.com/embed/RmKKjLTyispBGGbIfFYnNMasTH45jhRs2Wo9Z1nZ"></iframe>
+                    <iframe src="https://camstreamer.com/embed/RmKKjLTyispBGGbIfFYnNMasTH45jhRs2Wo9Z1nZ?autoplay=0"></iframe>
                 </div>
                 <div class="camera-section">
                     <h1>Paso del Norte (Sur)</h1>
-                    <iframe src="https://camstreamer.com/embed/tRbi7yHcfP1Q0MHaZwXCfd3ymXHZV8QYuulTvofn"></iframe>
+                    <iframe src="https://camstreamer.com/embed/tRbi7yHcfP1Q0MHaZwXCfd3ymXHZV8QYuulTvofn?autoplay=0"></iframe>
                 </div>
                 <div class="camera-section">
                     <h1>Lerdo (Norte)</h1>
                     <iframe src="https://camstreamer.com/embed/iEHyfOkiGPdnvCO4RYCLZTiFJGGk8InzjI3bXEx4"></iframe>
-                </div>
+                        </div>
                 <div class="camera-section">
                     <h1>Lerdo (Sur)</h1>
                     <iframe src="https://camstreamer.com/embed/iEKDRVOUybuFhtdKJKdRlaILyhMCSyrkEc8b0WgB"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Lerdo (Fila)</h1>
-                    <iframe src="https://camstreamer.com/embed/ozH8YEP3bIkP22lBFoUUdGgB0sEJ1FNppmmw8wJ4"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Zaragoza (Norte)</h1>
-                    <iframe src="https://camstreamer.com/embed/B3cMCOh60f8wcGEGwRhe3WTc8kFqthAFvUUdxGtE"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Zaragoza (Sur)</h1>
-                    <iframe src="https://camstreamer.com/embed/HlfBjAnK17GcfIvm0PzDLDuTLFYdtOtruMOIZeQy"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Zaragoza Carga (Norte)</h1>
-                    <iframe src="https://camstreamer.com/embed/VGvwCDk2Q3llvv72dI1eSvdoBOiZZ7jnQgV1zvN7"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Zaragoza Carga (Sur)</h1>
-                    <iframe src="https://camstreamer.com/embed/xJBZVxgjwn8N8ix09zaRnP4B8ZnT3nyapF52p38B"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Guadalupe (Norte)</h1>
-                    <iframe src="https://camstreamer.com/embed/uixDU3cVNl3OkKDDdEqOIkoiuBMeD2mSznGq0wUu"></iframe>
-                </div>
-                <div class="camera-section">
-                    <h1>Guadalupe (Sur)</h1>
-                    <iframe src="https://camstreamer.com/embed/pgoN0P9OWpB4C7mWffML3EraMCfHKjDnRGwjQO0p"></iframe>
-                </div>
-            </div>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Lerdo (Fila)</h1>
+                            <iframe src="https://camstreamer.com/embed/ozH8YEP3bIkP22lBFoUUdGgB0sEJ1FNppmmw8wJ4"></iframe>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Zaragoza (Norte)</h1>
+                            <iframe src="https://camstreamer.com/embed/B3cMCOh60f8wcGEGwRhe3WTc8kFqthAFvUUdxGtE"></iframe>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Zaragoza (Sur)</h1>
+                            <iframe src="https://camstreamer.com/embed/HlfBjAnK17GcfIvm0PzDLDuTLFYdtOtruMOIZeQy"></iframe>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Zaragoza Carga (Norte)</h1>
+                            <iframe src="https://camstreamer.com/embed/VGvwCDk2Q3llvv72dI1eSvdoBOiZZ7jnQgV1zvN7"></iframe>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Zaragoza Carga (Sur)</h1>
+                            <iframe src="https://camstreamer.com/embed/xJBZVxgjwn8N8ix09zaRnP4B8ZnT3nyapF52p38B"></iframe>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Guadalupe (Norte)</h1>
+                            <iframe src="https://camstreamer.com/embed/uixDU3cVNl3OkKDDdEqOIkoiuBMeD2mSznGq0wUu"></iframe>
+                        </div>
+                        <div class="camera-section">
+                            <h1>Guadalupe (Sur)</h1>
+                            <iframe src="https://camstreamer.com/embed/pgoN0P9OWpB4C7mWffML3EraMCfHKjDnRGwjQO0p"></iframe>
+                        </div>            </div>
         </body>
         </html>
         """
-
+        
         // Cargar el HTML en el WKWebView
-        self.webviewGeneral.loadHTMLString(htmlString, baseURL: nil)
+        webviewGeneral.loadHTMLString(htmlString, baseURL: nil)
     }
-    
-    func requestYTUrl() {
-        // create post request
-        let session = URLSession.shared
-        let sem = DispatchSemaphore.init(value: 0)
 
-        var request = URLRequest(url: URL(string: "https://apis.fpfch.gob.mx/api/v1/config/mobile")!)
-        request.httpMethod = "GET"
-        request.addValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
+    // Función para configurar la WKWebView
+    func configureWebView(webView: WKWebView) {
+        let webConfiguration = webView.configuration
+        webConfiguration.defaultWebpagePreferences.allowsContentJavaScript = true
+        webConfiguration.allowsInlineMediaPlayback = true
+        webConfiguration.mediaTypesRequiringUserActionForPlayback = []
+        webConfiguration.allowsPictureInPictureMediaPlayback = false // Desactivar el picture-in-picture
+    }
 
-        let task = session.dataTask(with: request) { data, response, error in
-            defer { sem.signal() }
-            
-            if let error = error {
-                print("Error -> \(error)")
-                return
-            }
-            
-            if let data = data, let string = String(data: data, encoding: .utf8) {
-                let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                if let dictionary = json as? [String: Any] {
-                    
-                    if let string = dictionary["mbPuenteLive3"] as? String {
-                        DispatchQueue.main.async() {
-                            let VideoURL = string.replacingOccurrences(of: "watch?v=", with: "embed/")
-                            self.ZaragozaWebView.configuration.defaultWebpagePreferences.allowsContentJavaScript = true
-                            self.ZaragozaWebView.configuration.allowsInlineMediaPlayback = true
-                            self.ZaragozaWebView.loadHTMLString(VideoURL, baseURL: nil)
-                            
-                            let myURL = URL(string: VideoURL)
-                            let youtubeRequest = URLRequest(url: myURL!)
-                            self.ZaragozaWebView.load(youtubeRequest)
-                        }
-                    }
-                    
-                    // Similar code for other cameras...
-                }
-            } else {
-                print("Error: Could not convert JSON string to")
-            }
+    // Delegado para controlar la navegación
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if navigationAction.navigationType == .linkActivated {
+            // Evitar que se abran enlaces externos
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
         }
-        task.resume()
-        sem.wait()
     }
 }
